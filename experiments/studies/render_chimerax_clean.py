@@ -2,10 +2,10 @@ from pathlib import Path
 import csv,json,numpy as np,traceback
 from chimerax.core.commands import run
 P=Path(__file__).resolve().parent
-OUT=P/'layout_chimerax_revision';D=OUT/'structures';D.mkdir(parents=True,exist_ok=True)
+OUT=P/'cartoons';D=OUT/'structures';D.mkdir(parents=True,exist_ok=True)
 try:
- meta=json.loads((P/'verified_revision/evidence/residue_shap_manifest.json').read_text())
- with open(P/'verified_revision/evidence/primary_residue_shap.csv') as f:rows=list(csv.DictReader(f))
+ meta=json.loads((P/'primary/evidence/residue_shap_manifest.json').read_text())
+ with open(P/'primary/evidence/primary_residue_shap.csv') as f:rows=list(csv.DictReader(f))
  model=run(session,'open "'+meta['structure'].replace('\\','/')+'"')[0]
  for command in ['hide atoms','cartoon','dssp','set bgColor white','lighting soft','graphics silhouettes true','camera ortho','view','turn y 25','turn x -10','view']:
   run(session,command)
@@ -24,7 +24,7 @@ try:
   run(session,f'save "{path.as_posix()}" width 1500 height 1300 supersample 3 transparentBackground true')
   run(session,f'save "{(D/("residue_"+assay+".cxs")).as_posix()}"')
   output.append(dict(assay=assay,scale=scale,path=str(path),residues=len(lookup)))
- (D/'render_manifest.json').write_text(json.dumps(dict(renderer='UCSF ChimeraX 1.11.1',representation='cartoon',source_structure=meta['structure'],source_scores=str(P/'verified_revision/evidence/primary_residue_shap.csv'),scores_unchanged=True,palette='blue-white-red; per-assay symmetric 95th percentile clipping',renders=output),indent=2))
+ (D/'render_manifest.json').write_text(json.dumps(dict(renderer='UCSF ChimeraX 1.11.1',representation='cartoon',source_structure=meta['structure'],source_scores=str(P/'primary/evidence/primary_residue_shap.csv'),scores_unchanged=True,palette='blue-white-red; per-assay symmetric 95th percentile clipping',renders=output),indent=2))
 except Exception:
  (OUT/'render_error.txt').write_text(traceback.format_exc())
 run(session,'exit')

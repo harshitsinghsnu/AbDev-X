@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,hashlib
-R=Path(__file__).resolve().parents[1];data=json.loads((R/'reference/input_manifest.json').read_text());missing=[];changed=[]
+R=Path(__file__).resolve().parents[1];data=json.loads((R/'checks/input_manifest.json').read_text());missing=[];changed=[]
 for record in data['files']:
  path=R/record['path']
  if not path.is_file():missing.append(record['path'])

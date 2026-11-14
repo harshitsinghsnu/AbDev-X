@@ -1,7 +1,7 @@
 """Run the stated AF3 single-sequence condition in an installed Linux AF3 env."""
 from pathlib import Path
 import argparse,os,subprocess,sys
-R=Path(__file__).resolve().parents[1];P=R/'experiments/studies/structure_predictor_benchmark'
+R=Path(__file__).resolve().parents[1];P=R/'experiments/studies/structures'
 ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--source',required=True,type=Path);ap.add_argument('--weights',required=True,type=Path);args=ap.parse_args()
 runner=args.source.resolve()/'run_alphafold.py'
 if not runner.exists():raise SystemExit('Official AF3 run_alphafold.py not found in --source')

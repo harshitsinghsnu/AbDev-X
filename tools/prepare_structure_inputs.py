@@ -2,10 +2,10 @@
 from pathlib import Path
 import os,sys,json,pickle
 import pandas as pd
-R=Path(__file__).resolve().parents[1];P=R/'experiments/studies';O=P/'structure_predictor_benchmark';os.chdir(R)
+R=Path(__file__).resolve().parents[1];P=R/'experiments/studies';O=P/'structures';os.chdir(R)
 sys.path[:0]=[str(R/'scripts'),str(R/'src')]
 from abdev.data.dataset import load_gdpa1
-with open(P/'verified_revision/evidence/fitted_primary.pkl','rb') as f:z=pickle.load(f)
+with open(P/'primary/evidence/fitted_primary.pkl','rb') as f:z=pickle.load(f)
 ds=load_gdpa1(str(R/'configs/default.yaml'));rows=[];inputs=O/'af3_inputs';inputs.mkdir(exist_ok=True)
 assert ds.df.antibody_name.tolist()==z['train_df'].antibody_name.tolist()
 for split,df in [('GDPa1',ds.df),('heldout_test',z['g3'])]:

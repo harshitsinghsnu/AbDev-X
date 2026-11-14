@@ -1,4 +1,0 @@
-Main: updated architecture; primary held-out findings; selected archived performance; benchmark context; representation generalization; encoder and structural ablation; source-removal/data efficiency; SHAP and structural maps.
-SI: S1 detailed SHAP; S2 soft MoE, physical constraints and bispecific transfer; S3 expert specialization; S4 routing/pooling; S5 VHH transfer and ranking; S6 robustness/confidence; S7 learner and descriptor screen.
-Omitted separate duplicates of main encoder matrices, surface maps, source-removal curves, mean rankings, GP comparison, bispecific scatters and source-weight matrices. S1 retains its contextual heatmap as part of the requested composite.
-All figures use portrait text width, with no individual height scaling. Captions follow the plotted data.

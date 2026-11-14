@@ -63,3 +63,13 @@ assets/
 
 baselines/delphi/requirements.txt
 baselines/delphi/environment.yml
+
+# Model and experiment code only
+workflows/
+reference/
+docs/
+assets/
+experiments/studies/structure_comparison_revision/
+experiments/studies/si_narrative_revision/
+experiments/studies/story_curated/
+**/structure_comparison_data/

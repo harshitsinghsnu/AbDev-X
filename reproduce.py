@@ -3,18 +3,18 @@ from pathlib import Path
 import argparse,os,subprocess,sys,json,time
 ROOT=Path(__file__).resolve().parent;P='experiments/studies/'
 STAGES={
- 'primary':[P+'verified_revision/verify_primary.py'],
+ 'primary':[P+'primary/verify_primary.py'],
  'cross_validation':['scripts/compute_awmoe_cv.py'],
- 'ablations':[P+'verified_revision/primary_ablations.py'],
- 'uncertainty':[P+'assay_revision/compute_uncertainty.py',P+'assay_revision/extend_uncertainty.py'],
- 'attributions':[P+'verified_revision/primary_residue_shap.py'],
+ 'ablations':[P+'primary/primary_ablations.py'],
+ 'uncertainty':[P+'evaluation/compute_uncertainty.py',P+'evaluation/extend_uncertainty.py'],
+ 'attributions':[P+'primary/primary_residue_shap.py'],
  'encoders':['scripts/exp_crossab.py','scripts/exp_encoder_screen.py','scripts/plm_ablation.py'],
- 'delphi_regression':[P+'same_data_delphi/train_regression.py'],
- 'delphi_classification':[P+'same_data_delphi/train_classification.py'],
- 'delphi_statistics':[P+'same_data_delphi/analyze.py'],
+ 'delphi_regression':[P+'delphi/train_regression.py'],
+ 'delphi_classification':[P+'delphi/train_classification.py'],
+ 'delphi_statistics':[P+'delphi/analyze.py'],
  'gp_kernels':[P+'run_matched_gp.py'],
- 'structure_comparison':[P+'structure_predictor_benchmark/evaluate_common.py'],
- 'figures':['workflows/figures/regenerate.py'],
+ 'structure_comparison':[P+'structures/evaluate_common.py'],
+ 'figures':['runners/figures/regenerate.py'],
  'verify':['tools/validate_results.py'],
 }
 ALL=['primary','cross_validation','ablations','encoders','uncertainty','attributions','delphi_regression','delphi_classification','delphi_statistics','gp_kernels','structure_comparison','figures','verify']
@@ -24,7 +24,7 @@ def main():
   for name,files in STAGES.items():print(name+': '+', '.join(files))
   return
  if not args.stage:ap.error('run requires a stage')
- stages=ALL if args.stage=='all' else [args.stage];env=dict(os.environ);env['PYTHONPATH']=os.pathsep.join([str(ROOT/'src'),str(ROOT/'scripts'),str(ROOT/P/'verified_revision'),env.get('PYTHONPATH','')]);env['PYTHONUTF8']='1';env['PYTHONUNBUFFERED']='1';env['OMP_NUM_THREADS']='1';env['OPENBLAS_NUM_THREADS']='1';env['MKL_NUM_THREADS']='1'
+ stages=ALL if args.stage=='all' else [args.stage];env=dict(os.environ);env['PYTHONPATH']=os.pathsep.join([str(ROOT/'src'),str(ROOT/'scripts'),str(ROOT/P/'primary'),env.get('PYTHONPATH','')]);env['PYTHONUTF8']='1';env['PYTHONUNBUFFERED']='1';env['OMP_NUM_THREADS']='1';env['OPENBLAS_NUM_THREADS']='1';env['MKL_NUM_THREADS']='1'
  logdir=ROOT/'outputs/run_logs';logdir.mkdir(parents=True,exist_ok=True);manifest=[]
  for stage in stages:
   for script in STAGES[stage]:

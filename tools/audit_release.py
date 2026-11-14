@@ -3,7 +3,7 @@ from pathlib import Path
 import subprocess,json,re
 R=Path(__file__).resolve().parents[1]
 raw=subprocess.check_output(['git','ls-files','--cached','--others','--exclude-standard','-z'],cwd=R)
-files=sorted(set(n.decode('utf8') for n in raw.split(b'\0') if n));oversized=[];credential_paths=[];unexpected=[]
+files=sorted(set(n.decode('utf8') for n in raw.split(b'\0') if n and (R/n.decode('utf8')).is_file()));oversized=[];credential_paths=[];unexpected=[]
 pattern=re.compile(r'(?:hf_[A-Za-z0-9]{25,}|ghp_[A-Za-z0-9]{25,}|github_pat_[A-Za-z0-9_]{30,}|AKIA[A-Z0-9]{16}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----)')
 for name in files:
  path=R/name
