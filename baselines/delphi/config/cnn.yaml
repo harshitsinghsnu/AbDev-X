@@ -1,0 +1,121 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# DELPHI — Configuration
+#
+# File    : config/cnn.yaml
+# Purpose : Hyperparameters for CNNModel (models/cnn.py)
+#           Edit this file to tune training without modifying source code.
+#           Applicable to any binary antibody property label
+#           (PSR, SEC, HIC, AC-SINS, viscosity, expression, ...).
+#
+# Data-Adaptive Hyperparameter Configuration
+#   DELPHI automatically derives model architecture and training settings
+#   from dataset size and embedding dimensionality at runtime (auto_scale: true).
+#   No manual tuning is required for new datasets or language models.
+#
+#   auto_scale: true  — uses two-axis continuous scaling:
+#                       Axis 1 (n_norm): controls batch size, epochs, lr.
+#                       Axis 2 (d_norm = n/emb): controls hidden_dim and dropout.
+#                       CNN-specific ceiling: hidden_dim=256, dropout=0.45.
+#   auto_scale: false — all values used exactly as written below.
+#
+# Project : Institute for Protein Innovation (IPI)
+# ══════════════════════════════════════════════════════════════════════════════
+#
+# PARAMETER TUNING GUIDE
+# ──────────────────────────────────────────────────────────────────────────────
+# Recommended workflow:
+#   Step 1 — Pre-compute embeddings once:
+#     python delphi.py --build-embedding data/ipi_psr_trainset.xlsx --lm igbert
+#
+#   Step 2 — Run kfold to validate AUC:
+#     python delphi.py --kfold 10 \
+#         --target psr_filter --lm igbert --model cnn \
+#         --db data/ipi_psr_trainset.xlsx
+#
+#   Step 3 — Train on full dataset:
+#     python delphi.py --train \
+#         --target psr_filter --lm igbert --model cnn \
+#         --db data/ipi_psr_trainset.xlsx
+#
+# Alternatively, register a best-fold checkpoint from kfold directly
+# in config/model_registry.yaml if validation shows it performs better.
+#
+# Quick settings reference:
+#   New dataset (unknown size):    auto_scale: true
+#   Overfitting:                   dropout += 0.05, weight_decay *= 2
+#   Underfitting:                  dropout -= 0.05
+#   Imbalanced data (15-30%):      loss.type: focal, focal_gamma: 1.5
+#   Severe imbalance (< 15%):      loss.type: focal, focal_gamma: 2.0
+#   GPU available:                 amp: true  (2-4x speedup)
+# ══════════════════════════════════════════════════════════════════════════════
+
+auto_scale: false    # recommended: two-axis adaptive scaling
+amp: false          # set true for CUDA GPU (2–4x speedup)
+
+# ── model (used only when auto_scale: false) ──────────────────────
+model:
+  hidden_dim: 128   # FC head dimension (64–256)
+  dropout:    0.35  # applied after pool and after first FC layer
+
+# ── training (lr/batch/epochs auto-set when auto_scale: true) ─────
+training:
+  epochs:       20          # YAML ceiling — auto_scale capped here
+  batch_size:   32
+  lr:           0.0001      # 1e-4 base (CNN converges faster than Transformer)
+  weight_decay: 0.01        # L2 regularisation — anti-memorization
+
+# ── LR scheduler ──────────────────────────────────────────────────
+scheduler:
+  mode:     min
+  factor:   0.5
+  patience: 6               # read by train_model() via config
+
+# ── loss function ─────────────────────────────────────────────────
+# type: auto  (recommended — selects from class distribution + n)
+#
+#   minority class rate   n             loss selected
+#   ─────────────────────────────────────────────────────────────
+#   < 15%                 any           focal  γ=2.0
+#   15–30%                any           focal  γ=1.5  (e.g. IPI SEC)
+#   ≥ 30%  (balanced)     > 50 000      label_smooth  ε=0.10
+#   ≥ 30%  (balanced)     ≤ 50 000      weighted_ce
+#
+loss:
+  type:            auto
+  focal_gamma:     2.0
+  label_smoothing: 0.05
+
+
+# ─────────────────────────────────────────────────────────────────
+# MANUAL OVERRIDE EXAMPLES  (set auto_scale: false to use these)
+# ─────────────────────────────────────────────────────────────────
+
+# ── Any LM, tiny dataset (n<500) ─────────────────────────────────
+# auto_scale: false
+# model:    {hidden_dim: 64, dropout: 0.45}
+# training: {epochs: 50, batch_size: 8, lr: 0.0001, weight_decay: 0.01}
+
+# ── IPI SEC + antiberta2 (n=8k, n/emb=7.8, 21% Fail) ─────────────
+# auto_scale: false
+# model:    {hidden_dim: 64, dropout: 0.37}
+# training: {epochs: 38, batch_size: 32, lr: 0.0001, weight_decay: 0.01}
+# loss:     {type: focal, focal_gamma: 1.5}
+
+# ── IPI PSR + ablang (n=12k, n/emb=25.0) ─────────────────────────
+# auto_scale: false
+# model:    {hidden_dim: 128, dropout: 0.30}
+# training: {epochs: 35, batch_size: 32, lr: 0.0001, weight_decay: 0.01}
+# loss:     {type: weighted_ce}
+
+# ── IPI PSR + antiberta2 (n=12k, n/emb=11.7) ─────────────────────
+# auto_scale: false
+# model:    {hidden_dim: 64, dropout: 0.34}
+# training: {epochs: 37, batch_size: 32, lr: 0.0001, weight_decay: 0.01}
+# loss:     {type: weighted_ce}
+
+# ── DS1 + antiberta2 (n=245k, n/emb=239) — GPU recommended ───────
+# auto_scale: false
+# amp: true
+# model:    {hidden_dim: 192, dropout: 0.14}
+# training: {epochs: 10, batch_size: 128, lr: 0.0002828, weight_decay: 0.005}
+# loss:     {type: label_smooth, label_smoothing: 0.10}

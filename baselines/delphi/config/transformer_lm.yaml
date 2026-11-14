@@ -1,0 +1,129 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# DELPHI — Configuration
+#
+# File    : config/transformer_lm.yaml
+# Purpose : Hyperparameters for TransformerLMModel (models/transformer_lm.py)
+#           Edit this file to tune training without modifying source code.
+#           Applicable to any binary antibody property label
+#           (PSR, SEC, HIC, AC-SINS, viscosity, expression, ...).
+#
+# Data-Adaptive Hyperparameter Configuration
+#   DELPHI automatically derives model architecture and training settings
+#   from dataset size and embedding dimensionality at runtime (auto_scale: true).
+#   No manual tuning is required for new datasets or language models.
+#
+#   auto_scale: true  — uses two-axis continuous scaling:
+#                       Axis 1 (n_norm): controls depth, batch size, epochs, lr.
+#                       Axis 2 (d_norm = n/emb): controls hidden_dim and dropout,
+#                       adapting to both dataset size and embedding dimensionality.
+#                       This means a larger PLM (1024-dim) on a small dataset
+#                       gets a smaller model with heavier regularisation than
+#                       a compact PLM (480-dim) on the same dataset.
+#   auto_scale: false — all values used exactly as written below.
+#
+# Project : Institute for Protein Innovation (IPI)
+# ══════════════════════════════════════════════════════════════════════════════
+#
+# PARAMETER TUNING GUIDE
+# ──────────────────────────────────────────────────────────────────────────────
+# Recommended workflow:
+#   Step 1 — Pre-compute embeddings once (reused across all runs):
+#     python delphi.py --build-embedding data/ipi_psr_trainset.xlsx --lm igbert
+#
+#   Step 2 — Run kfold to find best epoch and validate AUC:
+#     python delphi.py --kfold 10 \
+#         --target psr_filter --lm igbert --model transformer_lm \
+#         --db data/ipi_psr_trainset.xlsx
+#
+#   Step 3 — Set training.epochs to mean best epoch from kfold, then train:
+#     python delphi.py --train \
+#         --target psr_filter --lm igbert --model transformer_lm \
+#         --db data/ipi_psr_trainset.xlsx
+#
+# Alternatively, register a best-fold checkpoint from kfold directly
+# in config/model_registry.yaml if validation shows it performs better.
+#
+# Quick settings reference:
+#   New dataset (unknown size):    auto_scale: true
+#   Overfitting:                   dropout += 0.05, weight_decay *= 2
+#   Underfitting:                  dropout -= 0.05, num_layers += 1
+#   Imbalanced data (15-30%):      loss.type: focal, focal_gamma: 1.5
+#   Severe imbalance (< 15%):      loss.type: focal, focal_gamma: 2.0
+#   GPU available:                 amp: true  (2-4x speedup)
+# ══════════════════════════════════════════════════════════════════════════════
+
+auto_scale: false     # recommended: two-axis adaptive scaling
+amp: false          # set true for CUDA GPU (2–4x speedup)
+
+# ── model (used only when auto_scale: false) ──────────────────────
+model:
+  hidden_dim: 128   # must be divisible by num_heads
+  num_heads:  6     #8
+  num_layers: 3      #3
+  dropout:    0.38  # DS1 0.15-0.2 ablang-antiberta    # 0.38 for IPI PSR, 0.40 for IPI SEC — smaller for larger datasets
+  #dim_feedforward: 512
+
+# ── training (lr auto-set by scaling rule when auto_scale: true) ──lr:0.0000141
+training:
+  epochs:       55
+  batch_size:   32
+  lr:         0.00001
+  weight_decay: 0.001
+
+# ── LR scheduler ──────────────────────────────────────────────────
+scheduler:
+  mode:    min
+  factor:  0.5
+  patience: 7
+
+# ── loss function ─────────────────────────────────────────────────
+# type: auto  (recommended — selects from class distribution + n)
+#
+#   minority class rate   n             loss selected
+#   ─────────────────────────────────────────────────────────────
+#   < 15%                 any           focal  γ=2.0
+#   15–30%                any           focal  γ=1.5  (e.g. IPI SEC)
+#   ≥ 30%  (balanced)     > 50 000      label_smooth  ε=0.10
+#   ≥ 30%  (balanced)     ≤ 50 000      weighted_ce
+#
+loss:
+  type:           ce            # ce | weighted_ce | label_smooth | focal | auto
+  focal_gamma:    2.0           # overrides auto gamma when type: focal
+  label_smoothing: 0.05       # overrides auto ε when type: label_smooth
+
+
+# How to use loss type: 
+#   ce    Balanced data (40–60%) —  PSR case 
+#   weighted_ce     Mildly imbalanced (20–40%)
+#   label_smoothBalanced + want calibrated probabilities
+#   weighted_label_smooth     Imbalanced + calibration. 
+#   focal     Severe imbalance (<10% minority)
+#   auto.     Let the model decide based on pos_rate
+
+# ─────────────────────────────────────────────────────────────────
+# MANUAL OVERRIDE EXAMPLES  (set auto_scale: false to use these)
+# ─────────────────────────────────────────────────────────────────
+
+# ── Any LM, tiny dataset (n<500) ─────────────────────────────────
+# auto_scale: false
+# model: {hidden_dim: 64, num_heads: 8, num_layers: 1, dropout: 0.50}
+# training: {epochs: 60, batch_size: 8, lr: 0.0000071, weight_decay: 0.001}
+
+# ── IPI SEC + antiberta2 (n=8k, n/emb=7.8) ───────────────────────
+# auto_scale: false
+# model: {hidden_dim: 128, num_heads: 8, num_layers: 3, dropout: 0.40}
+# training: {epochs: 40, batch_size: 32, lr: 0.0000141, weight_decay: 0.001}
+# loss: {type: focal, focal_gamma: 1.5}
+
+# ── IPI PSR + ablang (n=12k, n/emb=25.0) ─────────────────────────
+# auto_scale: false
+# model: {hidden_dim: 192, num_heads: 8, num_layers: 3, dropout: 0.34}
+# training: {epochs: 37, batch_size: 32, lr: 0.0000141, weight_decay: 0.001}
+# loss: {type: weighted_ce}
+
+# ── DS1 + antiberta2 (n=245k, n/emb=239) — GPU recommended ───────
+# auto_scale: false
+# amp: true
+# model: {hidden_dim: 448, num_heads: 8, num_layers: 5, dropout: 0.15}
+# training: {epochs: 15, batch_size: 128, lr: 0.0000283, weight_decay: 0.0005}
+# loss: {type: label_smooth, label_smoothing: 0.10}

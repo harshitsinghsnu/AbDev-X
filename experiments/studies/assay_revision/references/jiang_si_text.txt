@@ -1,0 +1,1058 @@
+Supporting  Information
+Assay-Level Modeling and External Validation of Antibody 
+Developability Using Physicochemical Descriptors and 
+Sequence Embeddings
+Shasha Jiang 1=, Mark Akinola Ige2,3=, Hei Wun Kan1, Xiaochun Wan2, Junxin Li2, John Z.H. 
+Zhang4*, Zhiyuan Zheng1*, Haiping Zhang1*
+Affiliations 
+1 Faculty of Pharmaceutical Sciences, Shenzhen University of Advanced Technology, 
+Shenzhen 518107, China.
+2 Center for Protein and Cell-based Drugs, Institute of Biomedicine and Biotechnology, 
+Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, 1068 
+Xueyuan Avenue, Nanshan District, Shenzhen 518055, China.
+3 University of Chinese Academy of Sciences, Beijing 100049, China. 
+4 Faculty of Synthetic Biology, Shenzhen University of Advanced Technology, 
+Shenzhen 518107, China.
+5 Department of Biochemistry, University of Lagos, Akoka, Lagos. Nigeria
+Supplementary Methods
+Supplementary Methods S1. Sequence-cluster construction and threshold 
+sensitivity
+To assess the sensitivity of internal validation to sequence-based fold construction, 
+GDPa1 antibodies were clustered using paired VH/VL sequence similarity. Antibodies 
+connected above a specified similarity threshold were assigned to the same cluster, and 
+clusters were then assigned to cross-validation folds. Thresholds of 0.80, 0.85, 0.90, 
+0.95, and 0.98 were initially examined.
+
+Thresholds of 0.80 and 0.85 generated dominant clusters that contained most antibodies 
+and were therefore unsuitable for fold-based validation. Specifically, these thresholds 
+produced highly imbalanced fold partitions and were excluded from the main 
+comparison. Thresholds of 0.90, 0.95, and 0.98 were retained for threshold sensitivity 
+analysis. Thresholds of 0.95 and 0.98 generated balanced fold partitions, whereas 0.90 
+remained usable but less balanced because of one larger cluster.
+Cluster-split performance was evaluated using the sequence-derived descriptor model 
+and assay-wise Spearman correlation. The goal of this analysis was to examine the 
+robustness of internal validation estimates to clustering threshold selection rather than 
+to replace external held-out validation.
+Supplementary Methods S2. GDPa3 8-assay sensitivity analysis
+The main GDPa3 external validation analysis used seven directly matched assays 
+shared between GDPa1 and GDPa3. As an additional sensitivity analysis, GDPa3 
+titer_avg was mapped to the GDPa1 endpoint normalized_titer_productionbatch1_avg. 
+Because the titer measurement scale and experimental context differed between the two 
+datasets, this 8-assay analysis was not used as the primary external validation result. 
+Instead, it was reported as a supplementary sensitivity analysis to evaluate whether 
+inclusion of the mapped titer endpoint changed the overall interpretation of model 
+transferability.
+Supplementary Methods S3. PLAbDab application analysis
+To assess the scalability of the scoring workflow as an application demonstration, 
+paired antibody sequences were obtained from PLAbDab. Entries lacking either heavy- 
+or light-chain sequences, containing non-standard amino acid characters, duplicated 
+heavy–light chain pairs, or abnormal variable-region lengths were removed. Heavy-
+chain sequences were restricted to 95–150 amino acids, and light-chain sequences were 
+restricted to 85–130 amino acids to ensure compatibility with variable-region-based 
+descriptor calculation. After filtering, 2,978 paired VH/VL antibodies were retained.
+For each retained PLAbDab antibody, sequence-derived developability descriptors 
+were calculated using the same descriptor workflow. Missing descriptor features 
+required for scoring were imputed using statistics derived from the GDPa1 training 
+descriptor table. The trained models were applied to generate predictions for the eight 
+developability-related endpoints analyzed in GDPa1. Predicted assay values were 
+converted into direction-aware desirability scores and further aggregated into domain-
+level and overall developability scores.
+Candidate antibodies were ranked by the overall developability score. In addition, a 
+balanced prioritization strategy was applied by requiring a minimum assay-level 
+desirability score of at least 0.30, thereby reducing the selection of candidates with 
+strong liabilities in individual assays. Because PLAbDab lacks experimental assay 
+labels matched to the GDPa1 endpoints, this analysis was considered a supplementary 
+application demonstration rather than a strict external performance validation.
+Supplementary Methods S4. Empirical nonspecificity liability filtering
+As an optional supplementary application module, predicted developability scores were 
+
+combined with an empirical nonspecificity liability filter based on published antibody 
+developability principles. The filter flagged sequence- and structure-associated risk 
+features, including enrichment of aromatic or positively charged residues in CDRs, 
+arginine-rich paratopes, long CDRH3 regions, high Fv charge or pI, and exposed 
+hydrophobic, aromatic, charged, or W/F/Y/R-rich surface patches. This rule-based 
+module was used only as an application-oriented triage aid and was not included in 
+model training, internal validation, or GDPa3 external validation.
+Supplementary Figures
+Figure S1. Developability-only prioritization workflow and example candidate 
+profiling
+(A) Schematic workflow for converting assay-level developability predictions into direction-aware 
+desirability scores, domain-level profiles, overall developability scores, and prioritized shortlists. 
+This workflow is intended for developability-based triage after candidate antibodies have passed 
+upstream target-binding or functional screening. 
+(B) Example overall developability ranking of candidate antibodies based on predicted overall 
+developability scores. The top-ranked candidates were selected for further domain-level profiling. 
+(C) Domain-level developability profiles of selected top-ranked candidates across stability, 
+aggregation/hydrophobicity, nonspecificity/self-association, and expression/manufacturability 
+domains. 
+Because matched experimental developability labels were unavailable for these candidates, this 
+analysis should be interpreted as a supplementary application demonstration rather than as external 
+validation.
+Figure S2. Supplementary PLAbDab application analysis for large-scale 
+developability scoring.
+
+(A) Distribution of predicted overall developability scores across the filtered PLAbDab paired-
+antibody application set. 
+(B) Distribution of assay-level desirability scores across the eight GDPa1 developability endpoints. 
+(C) Panel C shows top-ranked PLAbDab antibodies by overall developability score, with balanced-
+prioritization status further summarized in Table S7.
+(D) Multi-assay desirability profiles of the balanced top 20 antibodies. The heatmap shows predicted 
+desirability scores for individual assay endpoints and highlights candidate-specific liabilities that 
+may be hidden by the overall score. 
+Because PLAbDab does not provide experimental labels matched to the GDPa1 assay endpoints, 
+this analysis was used as a supplementary application demonstration rather than as strict external 
+performance validation.
+Supplementary Tables
+Table S1. GDPa1 selected assay coverage and developability domain assignment
+Assay endpoint
+Short label
+Developability 
+domain
+Favora
+ble 
+directi
+on
+Total 
+antibod
+ies
+Labeled 
+antibod
+ies
+Missing 
+antibod
+ies
+Label 
+cover
+age 
+(%)
+Missin
+g rate 
+(%)
+tm1_nanodsf_avg
+TM1
+Stability
+High-
+good
+246
+237
+9
+96.3
+3.7
+tm2_nanodsf_avg
+TM2
+Stability
+High-
+good
+246
+208
+38
+84.6
+15.4
+tonset_nanodsf_avg
+Tonset
+Stability
+High-
+good
+246
+237
+9
+96.3
+3.7
+
+Assay endpoint
+Short label
+Developability 
+domain
+Favora
+ble 
+directi
+on
+Total 
+antibod
+ies
+Labeled 
+antibod
+ies
+Missing 
+antibod
+ies
+Label 
+cover
+age 
+(%)
+Missin
+g rate 
+(%)
+hic_rt_avg
+HIC RT
+Aggregation / 
+hydrophobicity
+Low-
+good
+246
+244
+2
+99.2
+0.8
+sec_%monomer_avg
+SEC 
+monomer
+Aggregation / 
+hydrophobicity
+High-
+good
+246
+244
+2
+99.2
+0.8
+acsins_dLmax_ph7.4_avg
+AC-SINS pH 
+7.4
+Nonspecificity / 
+self-association
+Low-
+good
+246
+244
+2
+99.2
+0.8
+polyreactivity_prscore_ch
+o_avg
+Polyreactivity
+Nonspecificity / 
+self-association
+Low-
+good
+246
+197
+49
+80.1
+19.9
+normalized_titer_producti
+onbatch1_avg
+Normalized 
+titer
+Expression / 
+manufacturability
+High-
+good
+246
+242
+4
+98.4
+1.6
+Eight assay endpoints were selected to represent four developability dimensions: stability, 
+aggregation/hydrophobicity, nonspecificity/self-association, and expression/manufacturability. 
+Label coverage was calculated using the GDPa1 modeling table with 246 antibodies. Favorable 
+direction indicates whether higher or lower assay values correspond to more favorable 
+developability.
+Table S2. Internal validation performance by assay on GDPa1
+Assay endpoint
+Short label
+Domain
+Favorable 
+direction
+Full 
+descripto
+r 
+Spearma
+n
+Sequence
+-only 
+descripto
+r 
+Spearma
+n
+Hybrid 
+Spearma
+n
+tm1_nanodsf_avg
+TM1
+Stability
+High-good
+0.358
+0.311
+0.184
+tm2_nanodsf_avg
+TM2
+Stability
+High-good
+0.282
+0.264
+0.420
+tonset_nanodsf_avg
+Tonset
+Stability
+High-good
+0.280
+0.312
+0.264
+hic_rt_avg
+HIC RT
+Aggregation / 
+hydrophobicity
+Low-good
+0.640
+0.550
+0.578
+sec_%monomer_avg
+SEC monomer
+Aggregation / 
+hydrophobicity
+High-good
+0.520
+0.472
+0.465
+acsins_dLmax_ph7.4_avg
+AC-SINS pH 7.4
+Nonspecificity / 
+self-association
+Low-good
+0.689
+0.496
+0.390
+polyreactivity_prscore_ch
+o_avg
+Polyreactivity
+Nonspecificity / 
+self-association
+Low-good
+0.764
+0.511
+0.319
+normalized_titer_producti
+onbatch1_avg
+Normalized titer
+Expression / 
+manufacturabilit
+y
+High-good
+0.799
+0.234
+0.282
+
+Spearman correlation was used as the primary internal validation metric because the downstream 
+developability workflow emphasizes rank-level assay trends and computational triage. Full 
+descriptor and hybrid models were evaluated under the leakage-controlled internal validation setting. 
+Sequence-only descriptor results were included as an additional internal baseline using sequence-
+derived descriptors. For the hybrid model, only validation-set performance was reported; training-
+set rows were excluded from this table.
+Table S3. GDPa3 external validation across seven directly matched assays. 
+Assay endpoint
+Short label
+Developability 
+domain
+Favorable 
+direction
+GDPa3 
+labeled 
+antibodies
+Full 
+descriptor 
+Spearman
+Sequence-
+only 
+descriptor 
+Spearman
+Hybrid 
+Spearman
+tm1_nanodsf_avg
+TM1
+Stability
+High-good
+80
+0.083
+0.121
+0.063
+tm2_nanodsf_avg
+TM2
+Stability
+High-good
+74
+0.110
+0.127
+0.041
+tonset_nanodsf_avg
+Tonset
+Stability
+High-good
+80
+0.056
+0.089
+-0.024
+hic_rt_avg
+HIC RT
+Aggregation/
+hydrophobicity
+Low-good
+79
+0.452
+0.551
+0.558
+sec_%monomer_avg
+SEC 
+monomer
+Aggregation/
+hydrophobicity
+High-good
+80
+-0.064
+-0.058
+-0.112
+acsins_dLmax_ph7.4_a
+vg
+AC-SINS 
+pH 7.4
+Nonspecificity/
+self-association
+Low-good
+80
+0.182
+0.100
+0.235
+polyreactivity_prscore_
+cho_avg
+Polyreactivi
+ty
+Nonspecificity/
+self-association
+Low-good
+80
+0.066
+0.044
+0.116
+MEAN
+Mean
+Summary
+0.126
+0.139
+0.125
+Seven assay endpoints were directly matched between GDPa1 and GDPa3 and used for the primary 
+external held-out validation analysis. Spearman correlation was calculated between predicted and 
+experimentally measured GDPa3 assay values. GDPa3 labeled antibodies indicates the number of 
+antibodies with available experimental measurements for each endpoint. The best model column 
+indicates the highest Spearman correlation for each assay. The mean row summarizes the average 
+Spearman correlation across the seven directly matched assays.
+Table S4. GDPa3 8-assay sensitivity analysis including mapped titer. 
+Assay endpoint
+GDPa3 source 
+assay
+Short 
+label
+Developability 
+domain
+Mapp
+ing 
+type
+Favo
+rable 
+direc
+tion
+GDPa3 
+labeled 
+antibod
+ies
+Full 
+descriptor 
+Spearman
+Sequence
+-only 
+descripto
+r 
+Spearma
+n
+Hybrid 
+Spearma
+n
+tm1_nanodsf_a
+vg
+tm1_nanodsf_a
+vg
+TM1
+Stability
+Direct 
+match
+High-
+good
+80
+0.083
+0.121
+0.063
+
+Assay endpoint
+GDPa3 source 
+assay
+Short 
+label
+Developability 
+domain
+Mapp
+ing 
+type
+Favo
+rable 
+direc
+tion
+GDPa3 
+labeled 
+antibod
+ies
+Full 
+descriptor 
+Spearman
+Sequence
+-only 
+descripto
+r 
+Spearma
+n
+Hybrid 
+Spearma
+n
+tm2_nanodsf_a
+vg
+tm2_nanodsf_a
+vg
+TM2
+Stability
+Direct 
+match
+High-
+good
+74
+0.110
+0.127
+0.041
+tonset_nanodsf_
+avg
+tonset_nanodsf
+_avg
+Tonset
+Stability
+Direct 
+match
+High-
+good
+80
+0.056
+0.089
+-0.024
+hic_rt_avg
+hic_rt_avg
+HIC RT
+Aggregation/hy
+drophobicity
+Direct 
+match
+Low-
+good
+79
+0.452
+0.551
+0.558
+sec_%monomer
+_avg
+sec_%monomer
+_avg
+SEC 
+monomer
+Aggregation/hy
+drophobicity
+Direct 
+match
+High-
+good
+80
+-0.064
+-0.058
+-0.112
+acsins_dLmax_
+ph7.4_avg
+acsins_dLmax_
+ph7.4_avg
+AC-SINS 
+pH 7.4
+Nonspecificity/
+self-association
+Direct 
+match
+Low-
+good
+80
+0.182
+0.100
+0.235
+polyreactivity_p
+rscore_cho_avg
+polyreactivity_
+prscore_cho_av
+g
+Polyreacti
+vity
+Nonspecificity/
+self-association
+Direct 
+match
+Low-
+good
+80
+0.066
+0.044
+0.116
+normalized_titer
+_productionbatc
+h1_avg
+titer_avg
+Titer
+Expression/ma
+nufacturability
+Mapp
+ed 
+sensiti
+vity
+High-
+good
+80
+-0.140
+-0.173
+0.022
+MEAN
+Mean
+Summary
+0.093
+0.100
+0.112
+MEDIAN
+Median
+Summary
+0.074
+0.094
+0.052
+The primary GDPa3 external validation analysis used seven directly matched assays between 
+GDPa1 and GDPa3. As a supplementary sensitivity analysis, GDPa3 titer_avg was mapped to the 
+GDPa1 endpoint normalized_titer_productionbatch1_avg and included as an eighth assay. 
+Spearman correlation was calculated between predicted and experimentally measured GDPa3 assay 
+values. The mapped titer endpoint was included only for sensitivity analysis because the titer 
+measurement scale and experimental context differed between GDPa1 and GDPa3. The highest 
+Spearman model column indicates the model with the highest Spearman correlation for each assay, 
+but does not imply strong absolute predictive performance.
+Table S5. Sequence-cluster fold distribution across thresholds
+Clusterin
+g 
+threshold
+Antibod
+ies used
+Number 
+of clusters
+Fold sizes
+Largest 
+cluster 
+size
+Largest 
+cluster 
+(%)
+Fold 
+balance
+Included in 
+validation
+Interpretation
+0.80
+244
+6
+239 / 2 / 1 / 
+1 / 1
+239
+98.0
+Invalid
+No
+Dominant-cluster 
+collapse
+
+Clusterin
+g 
+threshold
+Antibod
+ies used
+Number 
+of clusters
+Fold sizes
+Largest 
+cluster 
+size
+Largest 
+cluster 
+(%)
+Fold 
+balance
+Included in 
+validation
+Interpretation
+0.85
+244
+24
+219 / 7 / 6 / 
+6 / 6
+219
+89.8
+Highly 
+imbalanced
+No
+Dominant-cluster 
+collapse
+0.90
+244
+110
+104 / 35 / 
+35 / 35 / 35
+104
+42.6
+Usable but 
+imbalanced
+Sensitivity
+One large cluster 
+remained
+0.95
+244
+204
+49 / 49 / 49 
+/ 49 / 48
+15
+6.1
+Balanced
+Main/sensitiv
+ity
+Balanced cluster 
+split
+0.98
+244
+232
+49 / 49 / 49 
+/ 49 / 48
+6
+2.5
+Balanced
+Sensitivity
+Balanced but close 
+to random
+Sequence-cluster fold construction was performed on 244 GDPa1 antibodies with available paired 
+sequence information for clustering. Fold sizes indicate the number of antibodies assigned to each 
+of the five validation folds. Very permissive thresholds of 0.80 and 0.85 collapsed most antibodies 
+into one dominant cluster and were excluded from fold-based validation. Thresholds of 0.90, 0.95, 
+and 0.98 were retained for threshold sensitivity analysis. The 0.95 and 0.98 thresholds generated 
+balanced folds, whereas 0.90 was retained as a less balanced but usable sensitivity setting.
+Table S6. Sequence-cluster threshold sensitivity by assay
+Assay endpoint
+Domain
+Rando
+m split
+Cluster 
+0.90
+Cluster 
+0.95
+Cluster 
+0.98
+Cluster 
+range
+Interpretation
+hic_rt_avg
+Aggregation/hydrophobi
+city
+0.550
+0.521
+0.539
+0.505
+0.034
+Stable high
+polyreactivity_p
+rscore_cho_avg
+Nonspecificity/self-
+association
+0.511
+0.501
+0.415
+0.403
+0.098
+Moderate 
+threshold 
+sensitivity
+acsins_dLmax_p
+h7.4_avg
+Nonspecificity/self-
+association
+0.496
+0.501
+0.486
+0.480
+0.021
+Stable
+sec_%monomer
+_avg
+Aggregation/hydrophobi
+city
+0.472
+0.459
+0.487
+0.491
+0.032
+Stable
+tm1_nanodsf_av
+g
+Stability
+0.311
+0.336
+0.357
+0.367
+0.031
+Slightly higher 
+under cluster 
+split
+tm2_nanodsf_av
+g
+Stability
+0.264
+0.332
+0.290
+0.296
+0.042
+Moderate 
+threshold 
+sensitivity
+tonset_nanodsf_
+avg
+Stability
+0.312
+0.284
+0.324
+0.260
+0.064
+Moderate 
+threshold 
+sensitivity
+
+Assay endpoint
+Domain
+Rando
+m split
+Cluster 
+0.90
+Cluster 
+0.95
+Cluster 
+0.98
+Cluster 
+range
+Interpretation
+normalized_titer
+_productionbatc
+h1_avg
+Expression/manufacturab
+ility
+0.234
+0.329
+0.254
+0.259
+0.075
+Moderate 
+threshold 
+sensitivity
+MEAN
+Summary
+0.394
+0.408
+0.394
+0.383
+0.025
+Comparable to 
+random
+Internal validation was evaluated using a sequence-derived descriptor model under random splitting 
+and sequence-cluster splitting at thresholds of 0.90, 0.95, and 0.98. Spearman correlation was 
+calculated separately for each selected GDPa1 assay. Thresholds of 0.80 and 0.85 were excluded 
+from this table because they generated dominant clusters and invalid or highly imbalanced fold 
+partitions, as shown in Table S5. Cluster range was calculated as the difference between the 
+maximum and minimum Spearman correlations across the retained cluster thresholds. The mean 
+row summarizes average assay-level Spearman correlation across the eight endpoints.
+Table S7. Overall top-ranked PLAbDab antibodies with assay-level liability flags.
+Rank
+Antibody ID
+Overall 
+developability 
+score
+Minimum 
+assay 
+desirability
+Limiting 
+assay
+Assay 
+liabilities < 
+0.30
+Passes 
+balanced 
+criterion
+1
+AAA20139_AAA66494
+0.830
+0.457
+Titer
+0
+Yes
+2
+AOR08222
+0.829
+0.522
+HIC RT
+0
+Yes
+3
+AWT74668_AWT74669
+0.822
+0.527
+Titer
+0
+Yes
+4
+QNI22421_QNI22721
+0.817
+0.341
+Titer
+0
+Yes
+5
+WQA06483_WQA06484
+0.817
+0.447
+HIC RT
+0
+Yes
+6
+WIS44790_WIS44789
+0.816
+0.000
+Titer
+1
+No
+7
+WGM82934_WGM82987
+0.809
+0.538
+Polyreactivity
+0
+Yes
+8
+WIS43536_WIS43535
+0.807
+0.297
+Titer
+1
+No
+9
+AYH58200_AYH58205
+0.789
+0.000
+HIC RT
+1
+No
+10
+WIS44948_WIS44949
+0.788
+0.374
+Titer
+0
+Yes
+11
+4RX4_H_L
+0.786
+0.000
+Titer
+1
+No
+12
+QHX10151_QHX10152
+0.783
+0.289
+Polyreactivity
+1
+No
+13
+QEP20136_QEP20784
+0.782
+0.493
+TM1
+0
+Yes
+14
+ABL54120
+0.776
+0.000
+Titer
+1
+No
+15
+QYV43422_QYV43457
+0.772
+0.317
+Polyreactivity
+0
+Yes
+16
+WIO25623_WIO25667
+0.772
+0.148
+Titer
+1
+No
+17
+QEP19963_QEP20611
+0.770
+0.229
+Titer
+1
+No
+18
+WIS46018_WIS46066
+0.767
+0.162
+AC-SINS pH 
+7.4
+1
+No
+19
+AIT52455_AIT52397
+0.767
+0.000
+Titer
+1
+No
+
+Rank
+Antibody ID
+Overall 
+developability 
+score
+Minimum 
+assay 
+desirability
+Limiting 
+assay
+Assay 
+liabilities < 
+0.30
+Passes 
+balanced 
+criterion
+20
+WIO25631_WIO25659
+0.766
+0.387
+HIC RT
+0
+Yes
+PLAbDab antibodies were ranked by predicted overall developability score in the supplementary 
+developability-only application analysis. Minimum assay desirability indicates the lowest predicted 
+desirability score among the eight GDPa1 assay endpoints, and limiting assay indicates the endpoint 
+responsible for this minimum value. Assay liabilities < 0.30 reports the number of assay-level 
+desirability scores below the balanced prioritization threshold. Passes balanced criterion indicates 
+whether the antibody had no assay-level desirability score below 0.30. Because PLAbDab lacks 
+experimental labels matched to the GDPa1 assay endpoints, this table should be interpreted as a 
+supplementary computational triage result rather than experimentally validated candidate selection.

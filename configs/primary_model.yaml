@@ -1,0 +1,36 @@
+# Documentation/configuration record of the paper's operational primary model.
+# The audited research classes in scripts/aw_moe.py define the actual computation.
+name: AbDev-X
+dataset_config: configs/default.yaml
+training_panel: GDPa1
+external_panel: GDPa3
+outer_split: cluster_isotype
+expert_weights:
+  E1: 0.25
+  A_MGFS: 0.25
+  D_Stack: 0.25
+  F_MoE: 0.25
+representation_dimensions:
+  esm2: 2560
+  ablang2: 480
+  desc: 165
+  bio: 57
+  isotype: 5
+preprocessing:
+  standardize_within_training: true
+  pca_when_dimensions_exceed: 100
+  pca_variance_retained: 0.90
+ridge_alpha_grid:
+  log10_min: -2
+  log10_max: 4
+  count: 12
+primary_assays: [HIC, AC-SINS, PR_CHO, SMAC, HAC]
+default_extension_assays: [Tm1, Tm2, Tonset, SEC, Titer]
+metadata_ineligible_assays: [Tm1, Tm2, Tonset, SEC]
+structural_source_variant:
+  name: AbDev-X/common-structure20
+  replaces_primary_bio_block: true
+  structural_dimensions: 20
+  common_train_antibodies: 244
+  common_test_antibodies: 80
+  predictors: [ABodyBuilder3, IgFold, ESMFold, AlphaFold3]

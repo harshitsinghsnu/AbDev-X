@@ -1,0 +1,120 @@
+AbDev-X manuscript rewrite -- editorial and evidence audit
+Prepared 10 November 2026
+
+DELIVERABLE
+AbDevX_rewritten.pdf is the complete rewritten manuscript and supplementary
+material. AbDevX_rewritten.tex is the editable source. Fifteen figure assets
+are included: six main figures and nine supplementary figures. Eleven panels
+were rebuilt as vector plots/schematics; four supplied explanatory/GP assets
+were retained with scope-specific captions. The original manuscript was not
+overwritten. No new model training or experimental results were invented.
+
+SCIENTIFIC POSITIONING
+The strongest supported claim is the highest recorded mean held-out Spearman
+correlation among the evaluated same-five-assay strategies: 0.471534 versus
+0.451515 for D-Stack, 0.443651 for E1, 0.306506 for ESM-2 and 0.272924 for
+AbLang2. The comparison concerns HIC, AC-SINS, PR-CHO, SMAC and HAC. It is not a
+claim of universal state-of-the-art performance or superiority on every assay.
+The complete ten-assay mean (approximately 0.298) and weak endpoints remain
+prominent. This five-assay grouping is identified as descriptive/post hoc.
+
+SUBSTANTIVE CORRECTIONS FROM THE ORIGINAL DRAFT
+1. Top-level weights in results/aw_moe.csv are 0.25 for every expert on every
+   primary assay. Equal-weight and constrained learned-weight results match.
+   scripts/final_evaluation.py explicitly averages experts. The rewrite does
+   not credit a demonstrated nonuniform final gate for the measured gain.
+2. The optimization code uses 0.1 * sum(w**2), not an unsquared L2 penalty.
+   Rank correlation is locally constant; a local SLSQP run remaining uniform
+   is not proof that its weights are globally optimal.
+3. There are six conceptual feature families but five E1 implementation
+   blocks. Structural/surface features are consolidated into the bio block.
+4. The evaluated cached AbLang2 external array is (80,480), not (80,960).
+5. The operational metadata block has five HC/LC subtype categories. Explicit
+   germline gene one-hot encoding was not established by the primary code.
+6. The A-MGFS primary code applies keyword masks and ridge preprocessing. The
+   claimed 30-feature greedy cap is not implemented there. Recorded retained
+   counts include 39,31,122,22,22. The historical label is retained and clarified.
+7. F-MoE eligible feature groups vary by assay. It is not a fixed four-group
+   neural sample-level router. Charge, surface, hydrophobicity and CDR groups
+   are examples; stability and other candidate families occur in the code.
+8. The primary D-Stack uses two stream predictions. The old seven-prediction
+   ridge stack is a distinct experiment. Its scores are labeled separately.
+9. Primary four-expert code uses ridge pipelines. LightGBM/XGBoost belong to
+   additional source/proxy/learner experiments, not every primary expert.
+10. The actual loader reads official GDPa1 fold columns. The unsupported
+    new-CD-HIT/70%-identity description was removed; the benchmark describes
+    90%-identity grouping. Isotype stratification is not held-out-isotype CV.
+11. GDPa3 has 80 total antibodies but HIC n=79, HAC n=61, Tm2 n=74.
+12. HAC is heparin-affinity chromatography, not high-affinity aggregation
+    chromatography. SMAC and SEC readout descriptions were corrected.
+13. GDPa is Ginkgo Datapoints, not a CACHE dataset. The source citation was
+    replaced with the verified PROPHET-Ab and Ginkgo competition publications.
+14. Published champion mapping is AC-SINS 0.337 and PR-CHO 0.356. Several local
+    tables transpose these. The rewrite follows the published mapping.
+15. The strongest individual primary expert is D-Stack at 0.451515. The final
+    ensemble does not win every assay. It also exceeds the strongest recorded
+    tabular configuration mean (0.456) only modestly; some tabular configurations
+    win individual endpoints.
+16. The statement that all learning curves rise monotonically is false in the
+    saved table. Tm2 peaks at 60% and declines. Other curves have local reversals.
+17. Cross-assay arithmetic means, fold SD, cross-assay SD, and seed SD are
+    distinguished. Deterministic repeated runs are not independent replication.
+18. SHAP, descriptor IG, residue IG, and structural maps are labeled by their
+    proxy/component model. Metric confidence intervals are not individual
+    antibody prediction intervals.
+
+COMPARISONS REQUIRING CARE BEFORE SUBMISSION
+- The stored older paired-significance differences do not match the current
+  primary point estimates. They are not used to claim primary pairwise
+  significance. Recompute paired tests from archived predictions if needed.
+- The 0.229 versus 0.139 Jiang comparison is not traceable to a fully matched
+  protocol here and was removed from the main superiority claim. The real
+  Jiang paper already studies assay-level modeling.
+- The local DELPHI script binarizes labels, uses Transformer-LM, selects a
+  numeric output column, and correlates it directly with raw endpoints. Score
+  direction and selected output column need verification. For lower-is-better
+  assays, pass probability has opposite orientation to raw assay values. The
+  experiment is not an equal-objective regression reproduction of the platform.
+- Unverified Amini/KitAb bibliography/numbers were omitted from quantitative
+  superiority claims.
+- A separate stored DELPHI external-pretraining table explicitly reports
+  absolute correlation; it cannot support a signed matched-data comparison.
+- The GP audit's raw numeric table is unavailable in the inspected results
+  directory. Its old text conflicts about which PLM features are included.
+  Existing panels and reported values are preserved only as an exploratory
+  supplementary audit, excluded from the primary claim. Reconcile before
+  treating GP results as confirmatory or fully reproducible.
+- The nonprimary GDPa5 HIC value differs by run (0.143 in old prose versus
+  0.162497 in the saved transfer table). The rewrite follows the saved table.
+- Bispecific arm predictions share parents, some in GDPa1. Parent-disjoint
+  testing and parent-aware uncertainty are needed for independent transfer claims.
+- Entire selection/stacking/fusion evaluation should be nested prospectively.
+  The retrospective result does not justify claiming a single inspection of
+  GDPa3 labels or a new blinded benchmark win.
+
+REFERENCE CORRECTIONS VERIFIED AGAINST PRIMARY SOURCES
+AbLang2: Olsen TH, Moal IH, Deane CM. Bioinformatics 2024;40:btae618.
+  https://doi.org/10.1093/bioinformatics/btae618
+ABodyBuilder3: Kenlay H, Dreyer FA, Cutting D, Nissley D, Deane CM.
+  Bioinformatics 2024;40:btae576.
+  https://doi.org/10.1093/bioinformatics/btae576
+GDPa platform: Arsiwala A et al. mAbs 2025;17:2593055.
+  https://doi.org/10.1080/19420862.2025.2593055
+Competition: mAbs 2026;18:2634216.
+  https://doi.org/10.1080/19420862.2026.2634216
+Jiang S et al. Assay-Level Modeling and External Validation of Antibody
+  Developability Using Physicochemical Descriptors and Sequence Embeddings.
+  J Chem Inf Model 2026;66:11882-11894.
+  https://doi.org/10.1021/acs.jcim.6c02385
+DELPHI platform: https://github.com/proteininnovation/delphi
+
+BUILD
+From this folder, compile AbDevX_rewritten.tex with pdflatex at least twice.
+The file uses inline bibliography entries, so a BibTeX run is unnecessary.
+build_figures.py regenerates the eleven new panels using project results or
+the included evidence snapshot. The four preserved original PDF panels are
+already supplied in figures/ and are not regenerated from raw data.
+
+Author affiliations/declarations are carried from the supplied manuscript.
+Authors should verify their details and approve the scientific revision before
+submission. This is a compiled research draft, not a claim of author approval.

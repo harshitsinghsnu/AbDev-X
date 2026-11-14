@@ -1,0 +1,93 @@
+# GDPa3 held-out evaluation configuration.
+# Train on GDPa1, evaluate on GDPa3 (80 IgG1 antibodies from OAS).
+# Used by scripts/eval_heldout.py
+
+data:
+  # GDPa1 training set (unchanged)
+  hf_repo: "ginkgo-datapoints/GDPa1"
+  csv_filename: "GDPa1_v1.2_20250814.csv"
+  use_largest_csv: true
+  aggregate_replicates: true
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+
+  id_aliases: ["antibody_name", "antibody_id", "Antibody Name", "name", "id"]
+  heavy_aliases: ["vh_protein_sequence", "heavy_chain", "VH", "vh", "hc_protein_sequence", "heavy"]
+  light_aliases: ["vl_protein_sequence", "light_chain", "VL", "vl", "lc_protein_sequence", "light"]
+
+  fold_aliases:
+    random: ["random_fold"]
+    cluster: ["hierarchical_cluster_fold"]
+    cluster_isotype: ["hierarchical_cluster_IgG_isotype_stratified_fold"]
+  primary_fold: "cluster_isotype"
+
+# GDPa3 test set
+heldout:
+  csv_path: "data/processed/gdpa3_table.csv"
+  id_aliases: ["antibody_id", "antibody_name", "name", "id"]
+  heavy_aliases: ["vhn", "vh", "VH", "heavy_chain", "heavy"]
+  light_aliases: ["vl", "VL", "lc_protein_sequence", "light_chain", "light"]
+  targets:
+    HIC:
+      column: ["hic_rt_avg", "HIC", "HIC_retention_time", "Hydrophobicity"]
+      direction: lower
+    Tm2:
+      column: ["tm2_nanodsf_avg", "Tm2", "Thermostability_Tm2", "Tm2_C"]
+      direction: higher
+    AC-SINS_pH7.4:
+      column: ["acsins_dLmax_ph7.4_avg", "AC-SINS_pH7.4", "AC-SINS pH7.4", "Self-association_AC-SINS_pH7.4"]
+      direction: lower
+    PR_CHO:
+      column: ["polyreactivity_prscore_cho_avg", "PR_CHO", "Polyreactivity_CHO", "PR-CHO"]
+      direction: lower
+    Titer:
+      column: ["titer_avg", "Titer", "Titer_mg_L", "Expression_Titer"]
+      direction: higher
+
+targets:
+  HIC:
+    column: ["HIC", "HIC_retention_time", "Hydrophobicity", "HIC Retention Time"]
+    direction: lower
+  PR_CHO:
+    column: ["PR_CHO", "Polyreactivity_CHO", "PolyReactivity_CHO", "Poly-Specificity_CHO", "PR-CHO"]
+    direction: lower
+  AC-SINS_pH7.4:
+    column: ["AC-SINS_pH7.4", "AC-SINS pH7.4", "ACSINS_pH7.4", "Self-association_AC-SINS_pH7.4"]
+    direction: lower
+  Tm2:
+    column: ["Tm2", "Thermostability_Tm2", "Tm2_C", "Tm2 (C)"]
+    direction: higher
+  Titer:
+    column: ["Titer", "Titer_mg_L", "Expression_Titer", "Titer (mg/L)"]
+    direction: higher
+
+aux_targets:
+  column_aliases:
+    - ["Purity"]
+    - ["SEC %Monomer"]
+    - ["SMAC"]
+    - ["HAC"]
+    - ["PR_Ova"]
+    - ["AC-SINS_pH6.0"]
+    - ["Tonset"]
+    - ["Tm1"]
+
+features:
+  use_descriptors: true
+  use_esm2: true
+  use_ablang2: true
+  esm2_model: "facebook/esm2_t33_650M_UR50D"
+  ph: 7.4
+  pool: ["mean", "cdr"]
+
+model:
+  heads: ["ridge", "lgbm", "multitask_mlp"]
+  stacking: true
+  standardize_targets: true
+  random_state: 42
+
+eval:
+  metric: "spearman"
+  results_dir: "results"
+  n_bootstrap: 1000
+  bootstrap_seed: 42

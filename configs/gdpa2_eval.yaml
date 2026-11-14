@@ -1,0 +1,75 @@
+# GDPa2.1 VHH-Fc evaluation.
+# 51 clinical VHH-Fc antibodies (nanobodies fused to IgG1-Fc).
+# No light chain — model runs in VH-only mode (VL features zeroed).
+# NOTE: out-of-distribution test (AbDev-X trained on standard IgGs).
+
+data:
+  hf_repo: "ginkgo-datapoints/GDPa1"
+  csv_filename: "GDPa1_v1.2_20250814.csv"
+  use_largest_csv: true
+  aggregate_replicates: true
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+
+  id_aliases: ["antibody_name", "antibody_id", "name", "id"]
+  heavy_aliases: ["vh_protein_sequence", "VH", "vh", "vhn", "heavy_chain", "heavy"]
+  light_aliases: ["vl_protein_sequence", "VL", "vl", "light_chain", "light"]
+
+  fold_aliases:
+    random: ["random_fold"]
+    cluster: ["hierarchical_cluster_fold"]
+    cluster_isotype: ["hierarchical_cluster_IgG_isotype_stratified_fold"]
+  primary_fold: "cluster_isotype"
+
+heldout:
+  csv_path: "data/processed/gdpa2_1.csv"
+  id_aliases: ["antibody_id", "antibody_name", "name", "id"]
+  heavy_aliases: ["vhn", "vh_protein_sequence", "VH", "vh", "heavy"]
+  light_aliases: ["vl", "vl_protein_sequence", "VL", "light"]
+  targets:
+    HIC:
+      column: ["HIC", "hic_rt_Avg"]
+      direction: lower
+    Tm2:
+      column: ["Tm2", "tm2_nanodsf_Avg"]
+      direction: higher
+    AC-SINS_pH7.4:
+      column: ["AC-SINS", "acsins_dLmax_pH7.4_Avg", "AC-SINS_pH7.4"]
+      direction: lower
+
+targets:
+  HIC:
+    column: ["HIC", "HIC_retention_time"]
+    direction: lower
+  PR_CHO:
+    column: ["PR_CHO"]
+    direction: lower
+  AC-SINS_pH7.4:
+    column: ["AC-SINS_pH7.4", "AC-SINS pH7.4"]
+    direction: lower
+  Tm2:
+    column: ["Tm2", "Thermostability_Tm2"]
+    direction: higher
+  Titer:
+    column: ["Titer"]
+    direction: higher
+
+features:
+  use_descriptors: true
+  use_esm2: true
+  use_ablang2: true
+  esm2_model: "facebook/esm2_t33_650M_UR50D"
+  ph: 7.4
+  pool: ["mean", "cdr"]
+
+model:
+  heads: ["ridge", "lgbm", "multitask_mlp"]
+  stacking: true
+  standardize_targets: true
+  random_state: 42
+
+eval:
+  metric: "spearman"
+  results_dir: "results"
+  n_bootstrap: 1000
+  bootstrap_seed: 42

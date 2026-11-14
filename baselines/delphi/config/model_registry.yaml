@@ -1,0 +1,752 @@
+models:
+  FINAL_psr_filter_ablang_cnn_ipi_psr_trainset.pt:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: ablang
+    model: cnn
+    model_path: pretrained_202605/FINAL_psr_filter_ablang_cnn_ipi_psr_trainset.pt
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_ablang_rf_ipi_psr_trainset.pkl:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: ablang
+    model: rf
+    model_path: pretrained_202605/FINAL_psr_filter_ablang_rf_ipi_psr_trainset.pkl
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_ablang_transformer_lm_DS1.pt:
+    trainset: tests/DS1.xlsx
+    target: psr_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: pretrained_202605/FINAL_psr_filter_ablang_transformer_lm_DS1.pt
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_ablang_transformer_lm_ipi_psr_trainset.pt:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: pretrained_202605/FINAL_psr_filter_ablang_transformer_lm_ipi_psr_trainset.pt
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_ablang_xgboost_ipi_psr_trainset.pkl:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: ablang
+    model: xgboost
+    model_path: pretrained_202605/FINAL_psr_filter_ablang_xgboost_ipi_psr_trainset.pkl
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_antiberta2-cssp_cnn_ipi_psr_trainset.pt:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: antiberta2-cssp
+    model: cnn
+    model_path: pretrained_202605/FINAL_psr_filter_antiberta2-cssp_cnn_ipi_psr_trainset.pt
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_antiberta2-cssp_rf_ipi_psr_trainset.pkl:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: antiberta2-cssp
+    model: rf
+    model_path: pretrained_202605/FINAL_psr_filter_antiberta2-cssp_rf_ipi_psr_trainset.pkl
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_antiberta2-cssp_transformer_lm_DS1.pt:
+    trainset: tests/DS1.xlsx
+    target: psr_filter
+    lm: antiberta2-cssp
+    model: transformer_lm
+    model_path: pretrained_202605/FINAL_psr_filter_antiberta2-cssp_transformer_lm_DS1.pt
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_antiberta2-cssp_transformer_lm_ipi_psr_trainset.pt:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: antiberta2-cssp
+    model: transformer_lm
+    model_path: pretrained_202605/FINAL_psr_filter_antiberta2-cssp_transformer_lm_ipi_psr_trainset.pt
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_antiberta2_cnn_ipi_psr_trainset.pt:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: antiberta2
+    model: cnn
+    model_path: pretrained_202605/FINAL_psr_filter_antiberta2_cnn_ipi_psr_trainset.pt
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_antiberta2_rf_ipi_psr_trainset.pkl:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: antiberta2
+    model: rf
+    model_path: pretrained_202605/FINAL_psr_filter_antiberta2_rf_ipi_psr_trainset.pkl
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_antiberta2_transformer_lm_DS1.pt:
+    trainset: tests/DS1.xlsx
+    target: psr_filter
+    lm: antiberta2
+    model: transformer_lm
+    model_path: pretrained_202605/FINAL_psr_filter_antiberta2_transformer_lm_DS1.pt
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_antiberta2_transformer_lm_ipi_psr_trainset.pt:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: antiberta2
+    model: transformer_lm
+    model_path: pretrained_202605/FINAL_psr_filter_antiberta2_transformer_lm_ipi_psr_trainset.pt
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_antiberty_cnn_ipi_psr_trainset.pt:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: antiberty
+    model: cnn
+    model_path: pretrained_202605/FINAL_psr_filter_antiberty_cnn_ipi_psr_trainset.pt
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_antiberty_rf_ipi_psr_trainset.pkl:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: antiberty
+    model: rf
+    model_path: pretrained_202605/FINAL_psr_filter_antiberty_rf_ipi_psr_trainset.pkl
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_antiberty_transformer_lm_DS1.pt:
+    trainset: tests/DS1.xlsx
+    target: psr_filter
+    lm: antiberty
+    model: transformer_lm
+    model_path: pretrained_202605/FINAL_psr_filter_antiberty_transformer_lm_DS1.pt
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_antiberty_transformer_lm_ipi_psr_trainset.pt:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: antiberty
+    model: transformer_lm
+    model_path: pretrained_202605/FINAL_psr_filter_antiberty_transformer_lm_ipi_psr_trainset.pt
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_biophysical_rf_ipi_psr_trainset.pkl:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: biophysical
+    model: rf
+    model_path: pretrained_202605/FINAL_psr_filter_biophysical_rf_ipi_psr_trainset.pkl
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_biophysical_xgboost_ipi_psr_trainset.pkl:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: biophysical
+    model: xgboost
+    model_path: pretrained_202605/FINAL_psr_filter_biophysical_xgboost_ipi_psr_trainset.pkl
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_igbert_rf_ipi_psr_trainset.pkl:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: igbert
+    model: rf
+    model_path: pretrained_202605/FINAL_psr_filter_igbert_rf_ipi_psr_trainset.pkl
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_igbert_transformer_lm_ipi_psr_trainset.pt:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: igbert
+    model: transformer_lm
+    model_path: pretrained_202605/FINAL_psr_filter_igbert_transformer_lm_ipi_psr_trainset.pt
+    type: full_train
+    trained_at: '2026-05-19 16:45:00'
+    kfold_auc: 0.9102
+    kfold_std: 0.0198
+    kfold_folds: 10
+    kfold_best_fold: 2
+    threshold: 0.4621
+    epochs: 28
+    notes: LoRA fine-tuned on GPU
+  FINAL_psr_filter_igbert_xgboost_ipi_psr_trainset.pkl:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: igbert
+    model: xgboost
+    model_path: pretrained_202605/FINAL_psr_filter_igbert_xgboost_ipi_psr_trainset.pkl
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_kmer_rf_ipi_psr_trainset.pkl:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: kmer
+    model: rf
+    model_path: pretrained_202605/FINAL_psr_filter_kmer_rf_ipi_psr_trainset.pkl
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_onehot_rf_ipi_psr_trainset.pkl:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: onehot
+    model: rf
+    model_path: pretrained_202605/FINAL_psr_filter_onehot_rf_ipi_psr_trainset.pkl
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_onehot_transformer_onehot_DS1.pt:
+    trainset: tests/DS1.xlsx
+    target: psr_filter
+    lm: onehot
+    model: transformer_onehot
+    model_path: pretrained_202605/FINAL_psr_filter_onehot_transformer_onehot_DS1.pt
+    type: full_train
+    notes: ''
+  FINAL_psr_filter_onehot_transformer_onehot_ipi_psr_trainset.pt:
+    trainset: data/ipi_psr_trainset.xlsx
+    target: psr_filter
+    lm: onehot
+    model: transformer_onehot
+    model_path: pretrained_202605/FINAL_psr_filter_onehot_transformer_onehot_ipi_psr_trainset.pt
+    type: full_train
+    trained_at: '2026-05-18 14:23:00'
+    kfold_auc: 0.8821
+    kfold_std: 0.0312
+    kfold_folds: 10
+    kfold_best_fold: 3
+    threshold: 0.4812
+    epochs: 32
+    notes: ''
+  FINAL_sec_filter_ablang_cnn_ipi_sec_5000.pt:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: ablang
+    model: cnn
+    model_path: pretrained_202605/FINAL_sec_filter_ablang_cnn_ipi_sec_5000.pt
+    type: full_train
+    trained_at: '2026-06-11 11:05:11'
+    kfold_auc: 0.9504
+    kfold_folds: 10
+    kfold_best_fold: 9
+    epochs: 20
+    notes: ''
+  FINAL_sec_filter_ablang_rf_ipi_sec_5000.pkl:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: ablang
+    model: rf
+    model_path: pretrained_202605/FINAL_sec_filter_ablang_rf_ipi_sec_5000.pkl
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_ablang_transformer_lm_ipi_sec_5000.pt:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: pretrained_202605/FINAL_sec_filter_ablang_transformer_lm_ipi_sec_5000.pt
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_ablang_xgboost_ipi_sec_5000.pkl:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: ablang
+    model: xgboost
+    model_path: pretrained_202605/FINAL_sec_filter_ablang_xgboost_ipi_sec_5000.pkl
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_antiberta2-cssp_cnn_ipi_sec_5000.pt:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: antiberta2-cssp
+    model: cnn
+    model_path: pretrained_202605/FINAL_sec_filter_antiberta2-cssp_cnn_ipi_sec_5000.pt
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_antiberta2-cssp_rf_ipi_sec_5000.pkl:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: antiberta2-cssp
+    model: rf
+    model_path: pretrained_202605/FINAL_sec_filter_antiberta2-cssp_rf_ipi_sec_5000.pkl
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_antiberta2-cssp_transformer_lm_ipi_sec_5000.pt:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: antiberta2-cssp
+    model: transformer_lm
+    model_path: pretrained_202605/FINAL_sec_filter_antiberta2-cssp_transformer_lm_ipi_sec_5000.pt
+    type: full_train
+    trained_at: '2026-06-11 10:35:16'
+    kfold_auc: 0.9595
+    kfold_folds: 10
+    kfold_best_fold: 3
+    epochs: 55
+    notes: ''
+  FINAL_sec_filter_antiberta2-cssp_xgboost_ipi_sec_5000.pkl:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: antiberta2-cssp
+    model: xgboost
+    model_path: pretrained_202605/FINAL_sec_filter_antiberta2-cssp_xgboost_ipi_sec_5000.pkl
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_antiberta2_cnn_ipi_sec_5000.pt:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: antiberta2
+    model: cnn
+    model_path: pretrained_202605/FINAL_sec_filter_antiberta2_cnn_ipi_sec_5000.pt
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_antiberta2_rf_ipi_sec_5000.pkl:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: antiberta2
+    model: rf
+    model_path: pretrained_202605/FINAL_sec_filter_antiberta2_rf_ipi_sec_5000.pkl
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_antiberta2_transformer_lm_ipi_sec_5000.pt:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: antiberta2
+    model: transformer_lm
+    model_path: pretrained_202605/FINAL_sec_filter_antiberta2_transformer_lm_ipi_sec_5000.pt
+    type: full_train
+    trained_at: '2026-06-11 10:25:09'
+    kfold_auc: 0.9595
+    kfold_folds: 10
+    kfold_best_fold: 3
+    epochs: 55
+    notes: ''
+  FINAL_sec_filter_antiberta2_xgboost_ipi_sec_5000.pkl:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: antiberta2
+    model: xgboost
+    model_path: pretrained_202605/FINAL_sec_filter_antiberta2_xgboost_ipi_sec_5000.pkl
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_antiberty_cnn_ipi_sec_5000.pt:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: antiberty
+    model: cnn
+    model_path: pretrained_202605/FINAL_sec_filter_antiberty_cnn_ipi_sec_5000.pt
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_antiberty_rf_ipi_sec_5000.pkl:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: antiberty
+    model: rf
+    model_path: pretrained_202605/FINAL_sec_filter_antiberty_rf_ipi_sec_5000.pkl
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_antiberty_transformer_lm_ipi_sec_5000.pt:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: antiberty
+    model: transformer_lm
+    model_path: pretrained_202605/FINAL_sec_filter_antiberty_transformer_lm_ipi_sec_5000.pt
+    type: full_train
+    trained_at: '2026-06-11 09:07:49'
+    kfold_auc: 0.955
+    kfold_folds: 10
+    kfold_best_fold: 9
+    epochs: 55
+    notes: ''
+  FINAL_sec_filter_antiberty_xgboost_ipi_sec_5000.pkl:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: antiberty
+    model: xgboost
+    model_path: pretrained_202605/FINAL_sec_filter_antiberty_xgboost_ipi_sec_5000.pkl
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_biophysical_rf_ipi_sec_5000.pkl:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: biophysical
+    model: rf
+    model_path: pretrained_202605/FINAL_sec_filter_biophysical_rf_ipi_sec_5000.pkl
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_biophysical_xgboost_ipi_sec_5000.pkl:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: biophysical
+    model: xgboost
+    model_path: pretrained_202605/FINAL_sec_filter_biophysical_xgboost_ipi_sec_5000.pkl
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_igbert_cnn_ipi_sec_5000.pt:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: igbert
+    model: cnn
+    model_path: pretrained_202605/FINAL_sec_filter_igbert_cnn_ipi_sec_5000.pt
+    type: full_train
+    trained_at: '2026-06-11 12:10:47'
+    kfold_auc: 0.9477
+    kfold_folds: 10
+    kfold_best_fold: 3
+    epochs: 20
+    notes: ''
+  FINAL_sec_filter_igbert_rf_ipi_sec_5000.pkl:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: igbert
+    model: rf
+    model_path: pretrained_202605/FINAL_sec_filter_igbert_rf_ipi_sec_5000.pkl
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_igbert_transformer_lm_ipi_sec.pt:
+    trainset: data/ipi_sec_trainset.xlsx
+    target: sec_filter
+    lm: igbert
+    model: transformer_lm
+    model_path: pretrained_202605/BEST_sec_filter_igbert_transformer_lm_ipi_sec_trainset_k10_fold1.pt
+    type: best_fold
+    kfold_auc: 0.921
+    kfold_std: 0.0201
+    kfold_folds: 10
+    kfold_best_fold: 1
+    threshold: 0.473
+    notes: fold 1 outperforms full_train on external validation cohort GDPa3
+  FINAL_sec_filter_igbert_transformer_lm_ipi_sec_5000.pt:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: igbert
+    model: transformer_lm
+    model_path: pretrained_202605/FINAL_sec_filter_igbert_transformer_lm_ipi_sec_5000.pt
+    type: full_train
+    trained_at: '2026-06-11 05:29:37'
+    kfold_auc: 0.9626
+    kfold_folds: 10
+    kfold_best_fold: 9
+    epochs: 55
+    notes: ''
+  FINAL_sec_filter_igbert_xgboost_ipi_sec_5000.pkl:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: igbert
+    model: xgboost
+    model_path: pretrained_202605/FINAL_sec_filter_igbert_xgboost_ipi_sec_5000.pkl
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_kmer_rf_ipi_sec_5000.pkl:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: kmer
+    model: rf
+    model_path: pretrained_202605/FINAL_sec_filter_kmer_rf_ipi_sec_5000.pkl
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_kmer_xgboost_ipi_sec_5000.pkl:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: kmer
+    model: xgboost
+    model_path: pretrained_202605/FINAL_sec_filter_kmer_xgboost_ipi_sec_5000.pkl
+    type: full_train
+    notes: ''
+  FINAL_sec_filter_onehot_transformer_onehot_ipi_sec_5000.pt:
+    trainset: manuscripts/data/ipi_sec_5000.xlsx
+    target: sec_filter
+    lm: onehot
+    model: transformer_onehot
+    model_path: pretrained_202605/FINAL_sec_filter_onehot_transformer_onehot_ipi_sec_5000.pt
+    type: full_train
+    trained_at: '2026-04-10 09:15:00'
+    kfold_auc: 0.8634
+    kfold_std: 0.0401
+    kfold_folds: 10
+    kfold_best_fold: 7
+    threshold: 0.495
+    epochs: 28
+    notes: April baseline — before May data refresh and CDR3 prefix fix
+  FINAL_psr_filter_ablang_transformer_lm_train.pt:
+    trainset: C:/tmp/delphi_smoke/train.xlsx
+    target: psr_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_psr_filter_ablang_transformer_lm_train.pt
+    type: full_train
+    trained_at: '2026-10-28 19:42:35'
+    notes: ''
+  FINAL_HIC_filter_ablang_transformer_lm_train_HIC_fold0.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_HIC_fold0.xlsx
+    target: HIC_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_HIC_filter_ablang_transformer_lm_train_HIC_fold0.pt
+    type: full_train
+    trained_at: '2026-10-28 20:12:42'
+    notes: ''
+  FINAL_HIC_filter_ablang_transformer_lm_train_HIC_fold1.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_HIC_fold1.xlsx
+    target: HIC_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_HIC_filter_ablang_transformer_lm_train_HIC_fold1.pt
+    type: full_train
+    trained_at: '2026-10-28 20:13:30'
+    notes: ''
+  FINAL_HIC_filter_ablang_transformer_lm_train_HIC_fold2.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_HIC_fold2.xlsx
+    target: HIC_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_HIC_filter_ablang_transformer_lm_train_HIC_fold2.pt
+    type: full_train
+    trained_at: '2026-10-28 20:14:18'
+    notes: ''
+  FINAL_HIC_filter_ablang_transformer_lm_train_HIC_fold3.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_HIC_fold3.xlsx
+    target: HIC_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_HIC_filter_ablang_transformer_lm_train_HIC_fold3.pt
+    type: full_train
+    trained_at: '2026-10-28 20:15:05'
+    notes: ''
+  FINAL_HIC_filter_ablang_transformer_lm_train_HIC_fold4.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_HIC_fold4.xlsx
+    target: HIC_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_HIC_filter_ablang_transformer_lm_train_HIC_fold4.pt
+    type: full_train
+    trained_at: '2026-10-28 20:15:53'
+    notes: ''
+  FINAL_HIC_filter_ablang_transformer_lm_train_HIC_gdpa1.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_HIC_gdpa1.xlsx
+    target: HIC_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_HIC_filter_ablang_transformer_lm_train_HIC_gdpa1.pt
+    type: full_train
+    trained_at: '2026-10-28 20:16:48'
+    notes: ''
+  FINAL_Tm2_filter_ablang_transformer_lm_train_Tm2_fold0.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_Tm2_fold0.xlsx
+    target: Tm2_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_Tm2_filter_ablang_transformer_lm_train_Tm2_fold0.pt
+    type: full_train
+    trained_at: '2026-10-28 20:17:33'
+    notes: ''
+  FINAL_Tm2_filter_ablang_transformer_lm_train_Tm2_fold1.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_Tm2_fold1.xlsx
+    target: Tm2_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_Tm2_filter_ablang_transformer_lm_train_Tm2_fold1.pt
+    type: full_train
+    trained_at: '2026-10-28 20:18:16'
+    notes: ''
+  FINAL_Tm2_filter_ablang_transformer_lm_train_Tm2_fold2.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_Tm2_fold2.xlsx
+    target: Tm2_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_Tm2_filter_ablang_transformer_lm_train_Tm2_fold2.pt
+    type: full_train
+    trained_at: '2026-10-28 20:18:58'
+    notes: ''
+  FINAL_Tm2_filter_ablang_transformer_lm_train_Tm2_fold3.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_Tm2_fold3.xlsx
+    target: Tm2_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_Tm2_filter_ablang_transformer_lm_train_Tm2_fold3.pt
+    type: full_train
+    trained_at: '2026-10-28 20:19:41'
+    notes: ''
+  FINAL_Tm2_filter_ablang_transformer_lm_train_Tm2_fold4.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_Tm2_fold4.xlsx
+    target: Tm2_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_Tm2_filter_ablang_transformer_lm_train_Tm2_fold4.pt
+    type: full_train
+    trained_at: '2026-10-28 20:20:25'
+    notes: ''
+  FINAL_Tm2_filter_ablang_transformer_lm_train_Tm2_gdpa1.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_Tm2_gdpa1.xlsx
+    target: Tm2_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_Tm2_filter_ablang_transformer_lm_train_Tm2_gdpa1.pt
+    type: full_train
+    trained_at: '2026-10-28 20:21:19'
+    notes: ''
+  FINAL_AC_SINS_pH7_4_filter_ablang_transformer_lm_train_AC-SINS_pH74_fold0.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_AC-SINS_pH74_fold0.xlsx
+    target: AC_SINS_pH7_4_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_AC_SINS_pH7_4_filter_ablang_transformer_lm_train_AC-SINS_pH74_fold0.pt
+    type: full_train
+    trained_at: '2026-10-28 20:22:09'
+    notes: ''
+  FINAL_AC_SINS_pH7_4_filter_ablang_transformer_lm_train_AC-SINS_pH74_fold1.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_AC-SINS_pH74_fold1.xlsx
+    target: AC_SINS_pH7_4_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_AC_SINS_pH7_4_filter_ablang_transformer_lm_train_AC-SINS_pH74_fold1.pt
+    type: full_train
+    trained_at: '2026-10-28 20:22:58'
+    notes: ''
+  FINAL_AC_SINS_pH7_4_filter_ablang_transformer_lm_train_AC-SINS_pH74_fold2.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_AC-SINS_pH74_fold2.xlsx
+    target: AC_SINS_pH7_4_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_AC_SINS_pH7_4_filter_ablang_transformer_lm_train_AC-SINS_pH74_fold2.pt
+    type: full_train
+    trained_at: '2026-10-28 20:23:47'
+    notes: ''
+  FINAL_AC_SINS_pH7_4_filter_ablang_transformer_lm_train_AC-SINS_pH74_fold3.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_AC-SINS_pH74_fold3.xlsx
+    target: AC_SINS_pH7_4_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_AC_SINS_pH7_4_filter_ablang_transformer_lm_train_AC-SINS_pH74_fold3.pt
+    type: full_train
+    trained_at: '2026-10-28 20:24:34'
+    notes: ''
+  FINAL_AC_SINS_pH7_4_filter_ablang_transformer_lm_train_AC-SINS_pH74_fold4.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_AC-SINS_pH74_fold4.xlsx
+    target: AC_SINS_pH7_4_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_AC_SINS_pH7_4_filter_ablang_transformer_lm_train_AC-SINS_pH74_fold4.pt
+    type: full_train
+    trained_at: '2026-10-28 20:25:21'
+    notes: ''
+  FINAL_AC_SINS_pH7_4_filter_ablang_transformer_lm_train_AC-SINS_pH74_gdpa1.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_AC-SINS_pH74_gdpa1.xlsx
+    target: AC_SINS_pH7_4_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_AC_SINS_pH7_4_filter_ablang_transformer_lm_train_AC-SINS_pH74_gdpa1.pt
+    type: full_train
+    trained_at: '2026-10-28 20:26:17'
+    notes: ''
+  FINAL_PR_CHO_filter_ablang_transformer_lm_train_PR_CHO_fold0.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_PR_CHO_fold0.xlsx
+    target: PR_CHO_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_PR_CHO_filter_ablang_transformer_lm_train_PR_CHO_fold0.pt
+    type: full_train
+    trained_at: '2026-10-28 20:27:03'
+    notes: ''
+  FINAL_PR_CHO_filter_ablang_transformer_lm_train_PR_CHO_fold1.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_PR_CHO_fold1.xlsx
+    target: PR_CHO_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_PR_CHO_filter_ablang_transformer_lm_train_PR_CHO_fold1.pt
+    type: full_train
+    trained_at: '2026-10-28 20:27:48'
+    notes: ''
+  FINAL_PR_CHO_filter_ablang_transformer_lm_train_PR_CHO_fold2.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_PR_CHO_fold2.xlsx
+    target: PR_CHO_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_PR_CHO_filter_ablang_transformer_lm_train_PR_CHO_fold2.pt
+    type: full_train
+    trained_at: '2026-10-28 20:28:32'
+    notes: ''
+  FINAL_PR_CHO_filter_ablang_transformer_lm_train_PR_CHO_fold3.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_PR_CHO_fold3.xlsx
+    target: PR_CHO_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_PR_CHO_filter_ablang_transformer_lm_train_PR_CHO_fold3.pt
+    type: full_train
+    trained_at: '2026-10-28 20:29:15'
+    notes: ''
+  FINAL_PR_CHO_filter_ablang_transformer_lm_train_PR_CHO_fold4.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_PR_CHO_fold4.xlsx
+    target: PR_CHO_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_PR_CHO_filter_ablang_transformer_lm_train_PR_CHO_fold4.pt
+    type: full_train
+    trained_at: '2026-10-28 20:29:58'
+    notes: ''
+  FINAL_PR_CHO_filter_ablang_transformer_lm_train_PR_CHO_gdpa1.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_PR_CHO_gdpa1.xlsx
+    target: PR_CHO_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_PR_CHO_filter_ablang_transformer_lm_train_PR_CHO_gdpa1.pt
+    type: full_train
+    trained_at: '2026-10-28 20:30:53'
+    notes: ''
+  FINAL_Titer_filter_ablang_transformer_lm_train_Titer_fold0.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_Titer_fold0.xlsx
+    target: Titer_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_Titer_filter_ablang_transformer_lm_train_Titer_fold0.pt
+    type: full_train
+    trained_at: '2026-10-28 20:31:44'
+    notes: ''
+  FINAL_Titer_filter_ablang_transformer_lm_train_Titer_fold1.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_Titer_fold1.xlsx
+    target: Titer_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_Titer_filter_ablang_transformer_lm_train_Titer_fold1.pt
+    type: full_train
+    trained_at: '2026-10-28 20:32:33'
+    notes: ''
+  FINAL_Titer_filter_ablang_transformer_lm_train_Titer_fold2.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_Titer_fold2.xlsx
+    target: Titer_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_Titer_filter_ablang_transformer_lm_train_Titer_fold2.pt
+    type: full_train
+    trained_at: '2026-10-28 20:33:21'
+    notes: ''
+  FINAL_Titer_filter_ablang_transformer_lm_train_Titer_fold3.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_Titer_fold3.xlsx
+    target: Titer_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_Titer_filter_ablang_transformer_lm_train_Titer_fold3.pt
+    type: full_train
+    trained_at: '2026-10-28 20:34:10'
+    notes: ''
+  FINAL_Titer_filter_ablang_transformer_lm_train_Titer_fold4.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_Titer_fold4.xlsx
+    target: Titer_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_Titer_filter_ablang_transformer_lm_train_Titer_fold4.pt
+    type: full_train
+    trained_at: '2026-10-28 20:34:57'
+    notes: ''
+  FINAL_Titer_filter_ablang_transformer_lm_train_Titer_gdpa1.pt:
+    trainset: C:\Users\hs494\AppData\Local\Temp\delphi_cmp_er4w8ipd\train_Titer_gdpa1.xlsx
+    target: Titer_filter
+    lm: ablang
+    model: transformer_lm
+    model_path: C:\Users\hs494\delphi\build\pretrained_models/FINAL_Titer_filter_ablang_transformer_lm_train_Titer_gdpa1.pt
+    type: full_train
+    trained_at: '2026-10-28 20:35:51'
+    notes: ''

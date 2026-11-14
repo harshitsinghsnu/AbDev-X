@@ -1,0 +1,9 @@
+Final layout revision, 11 November 2026.
+One combined PDF contains the main manuscript followed by Supplementary Information.
+Main: updated author architecture plus the three exact PDF panels specified by the user.
+Supplement: all fifteen remaining figure panels.
+All figure graphics use full available page text width, preserve aspect ratio, and have no hidden height-based downscaling.
+The three selected PDF assets are exact copies; hashes are in selected_figure_sources.json.
+Captions describe actual supplied panels: the selected performance panel B contains scatter plots, not nine-model means; the selected generalization panel A contains per-assay split comparisons, not four-model means.
+Underlying primary ensemble results and their detailed plots remain available in tables and SI.
+No models were retrained or source figure data altered.
