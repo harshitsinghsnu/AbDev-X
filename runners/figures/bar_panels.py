@@ -5,7 +5,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from scipy.stats import norm
-P=Path(__file__).resolve().parents[2]/'experiments/studies';ROOT=P.parents[1];R=ROOT/'results';E=P/'evaluation/evidence';OLD=P/'cartoons';O=ROOT/'outputs';F=O/'figures'
+P=Path(__file__).resolve().parents[2]/'experiments';ROOT=P.parent;R=ROOT/'results';E=P/'evaluation/evidence';OLD=P/'cartoons';O=ROOT/'outputs';F=O/'figures'
 F.mkdir(parents=True,exist_ok=True)
 plt.rcParams.update({'font.family':'Arial','font.size':8,'axes.titlesize':9,'axes.labelsize':8,'xtick.labelsize':7,'ytick.labelsize':7,'pdf.fonttype':42,'svg.fonttype':'none','axes.spines.top':False,'axes.spines.right':False})
 COL=['#2474A7','#D58A30','#55A080','#9E65A5','#C15A65','#68858A'];PRIMARY=['HIC','AC-SINS','PR_CHO','SMAC','HAC'];COMP=['HIC','Tm2','AC-SINS_pH7.4','PR_CHO','Titer']

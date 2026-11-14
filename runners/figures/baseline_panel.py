@@ -4,7 +4,7 @@ import numpy as np,pandas as pd
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-P=Path(__file__).resolve().parents[2]/'experiments/studies';O=P/'gaussian_process';F=P.parents[1]/'outputs/figures';E=O/'evidence';R=P.parents[1]/'results'
+P=Path(__file__).resolve().parents[2]/'experiments';O=P/'gaussian_process';F=P.parent/'outputs/figures';E=O/'evidence';R=P.parent/'results'
 F.mkdir(parents=True,exist_ok=True)
 plt.rcParams.update({'font.family':'Arial','font.size':7,'axes.titlesize':8,'legend.fontsize':6,'xtick.labelsize':6,'ytick.labelsize':6,'pdf.fonttype':42,'svg.fonttype':'none','axes.spines.top':False,'axes.spines.right':False})
 comp=['HIC','Tm2','AC-SINS','PR_CHO','Titer'];nice=lambda a:a.replace('PR_CHO','PR-CHO')

@@ -2,7 +2,7 @@
 from pathlib import Path
 import os,sys,json,pickle
 import pandas as pd
-R=Path(__file__).resolve().parents[1];P=R/'experiments/studies';O=P/'structures';os.chdir(R)
+R=Path(__file__).resolve().parents[1];P=R/'experiments';O=P/'structures';os.chdir(R)
 sys.path[:0]=[str(R/'scripts'),str(R/'src')]
 from abdev.data.dataset import load_gdpa1
 with open(P/'primary/evidence/fitted_primary.pkl','rb') as f:z=pickle.load(f)

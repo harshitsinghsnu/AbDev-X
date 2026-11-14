@@ -5,7 +5,8 @@ external/
 results/
 experiments/**/evidence/
 experiments/**/figures/
-experiments/**/structures/
+experiments/structures/structures/
+experiments/cartoons/structures/
 experiments/**/comparison_*/
 experiments/**/af3_inputs/
 experiments/**/af3_results/
@@ -73,3 +74,7 @@ experiments/studies/structure_comparison_revision/
 experiments/studies/si_narrative_revision/
 experiments/studies/story_curated/
 **/structure_comparison_data/
+
+docs/
+checks/
+experiments/studies/

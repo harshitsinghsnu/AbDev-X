@@ -6,7 +6,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 from scipy.stats import norm
-H=Path(__file__).parent;ROOT=H.parents[2];E=H/'evidence';F=H/'figures';R=ROOT/'results'
+H=Path(__file__).parent;ROOT=H.parents[1];E=H/'evidence';F=H/'figures';R=ROOT/'results'
 sys.path.insert(0,str(H.parent/'plotting'));import build_readable_figures as b
 b.H=H;b.F=F
 W=b.W;COMP=b.COMP;PRIMARY=b.PRIMARY;COL=b.COL;BLUE=b.BLUE;GREY=b.GREY

@@ -11,7 +11,7 @@ import numpy as np,pandas as pd,torch,yaml
 from sklearn.metrics import roc_auc_score,average_precision_score
 from threadpoolctl import threadpool_limits
 sys.stdout.reconfigure(encoding='utf8');torch.set_num_threads(1)
-O=Path(__file__).resolve().parent;P=O.parent;R=P.parents[1];D=R/'baselines/delphi';sys.path[:0]=[str(D),str(P/'primary'),str(R/'scripts'),str(R/'src')]
+O=Path(__file__).resolve().parent;P=O.parent;R=P.parent;D=R/'baselines/delphi';sys.path[:0]=[str(D),str(P/'primary'),str(R/'scripts'),str(R/'src')]
 from models.transformer_lm import TransClassifier
 import verify_primary as V
 with open(P/'primary/evidence/fitted_primary.pkl','rb') as f:z=pickle.load(f)

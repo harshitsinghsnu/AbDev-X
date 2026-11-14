@@ -9,7 +9,7 @@ import numpy as np,pandas as pd
 from scipy.stats import rankdata,norm,spearmanr
 import torch
 torch.set_num_threads(1)
-O=Path(__file__).resolve().parent;P=O.parent;R=P.parents[1];D=R/'baselines/delphi'
+O=Path(__file__).resolve().parent;P=O.parent;R=P.parent;D=R/'baselines/delphi'
 sys.path.insert(0,str(D))
 from models.transformer_lm import TransformerLMModel
 g=pd.read_csv(R/'data/processed/gdpa3_table.csv')

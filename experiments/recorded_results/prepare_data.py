@@ -6,7 +6,7 @@ import sys,pickle
 import numpy as np,pandas as pd
 from scipy.stats import spearmanr,bootstrap
 from threadpoolctl import threadpool_limits
-H=Path(__file__).parent;ROOT=H.parents[2];VROOT=H.parent/'primary';E=H/'evidence';sys.path.insert(0,str(VROOT))
+H=Path(__file__).parent;ROOT=H.parents[1];VROOT=H.parent/'primary';E=H/'evidence';sys.path.insert(0,str(VROOT))
 import verify_primary as V
 with open(VROOT/'evidence/fitted_primary.pkl','rb') as f:Z=pickle.load(f)
 B1=Z['B1'];B3=Z['B3'];folds=Z['folds'];cols=Z['descriptor_columns']+Z['bio_columns'];df=Z['train_df'];g3=Z['g3']

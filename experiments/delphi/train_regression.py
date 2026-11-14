@@ -10,7 +10,7 @@ from pathlib import Path
 import numpy as np,pandas as pd,torch,yaml
 from scipy.stats import spearmanr
 sys.stdout.reconfigure(encoding='utf8');torch.set_num_threads(1)
-O=Path(__file__).resolve().parent;P=O.parent;R=P.parents[1];D=R/'baselines/delphi'
+O=Path(__file__).resolve().parent;P=O.parent;R=P.parent;D=R/'baselines/delphi'
 sys.path[:0]=[str(D),str(R/'scripts'),str(R/'src')]
 from models.transformer_lm import TransClassifier
 with open(P/'primary/evidence/fitted_primary.pkl','rb') as f:z=pickle.load(f)

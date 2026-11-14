@@ -1,7 +1,7 @@
 """Generate the numerical result plots without any manuscript dependencies."""
 from pathlib import Path
 import runpy,sys,os
-R=Path(__file__).resolve().parents[2];P=R/'experiments/studies';F=R/'outputs/figures';F.mkdir(parents=True,exist_ok=True);os.chdir(R)
+R=Path(__file__).resolve().parents[2];P=R/'experiments';F=R/'outputs/figures';F.mkdir(parents=True,exist_ok=True);os.chdir(R)
 sys.path[:0]=[str(P/'evaluation'),str(P/'plotting'),str(P/'primary'),str(R/'scripts'),str(R/'src')]
 import make_revision_figures as m
 m.F=F;m.b.F=F

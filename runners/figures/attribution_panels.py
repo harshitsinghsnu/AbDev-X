@@ -6,7 +6,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from scipy.stats import rankdata
 from PIL import Image
-R=Path(__file__).resolve().parents[2];P=R/'experiments/studies';V=P/'primary'
+R=Path(__file__).resolve().parents[2];P=R/'experiments';V=P/'primary'
 F=R/'outputs/figures';E=R/'outputs/attributions';F.mkdir(parents=True,exist_ok=True);E.mkdir(parents=True,exist_ok=True)
 crop=R/'outputs/structure_crops';crop.mkdir(parents=True,exist_ok=True)
 for a in ['HIC','Tm2','AC-SINS','PR_CHO','Titer','SMAC','HAC','Tm1','Tonset','SEC']:

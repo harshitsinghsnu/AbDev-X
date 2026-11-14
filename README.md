@@ -17,9 +17,9 @@ py -3.11 -m venv .venv
 
 Obtain GDPa datasets from https://datapoints.ginkgo.bio/dataset-access and the
 benchmark features from https://github.com/ginkgobioworks/abdev-benchmark.
-`checks/input_manifest.json` lists the expected input paths and checksums.
+`data/input_manifest.json` lists the expected input paths and checksums.
 Cached result tables needed for historical comparisons are listed in
-`checks/artifact_manifest.json`. Restore an authorized input/result tree with
+`data/artifact_manifest.json`. Restore an authorized input/result tree with
 `python tools/restore_inputs.py --from PATH`.
 
 Data, model weights, local caches, and generated outputs are excluded from Git.
@@ -37,7 +37,6 @@ applications installed separately.
 ```
 
 `src/` contains reusable model utilities, `scripts/` contains research modules,
-`experiments/studies/` contains the experiment implementations, and `runners/`
+`experiments/` contains the experiment implementations, and `runners/`
 groups the execution and plotting commands. `baselines/delphi/` retains the
-comparator code and its original license. Numerical checks are in `checks/`.
-Execution logs and plots are saved under `outputs/`.
+comparator code and its original license. Execution logs and plots are saved under `outputs/`.

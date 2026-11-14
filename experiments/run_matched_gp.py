@@ -13,7 +13,7 @@ from scipy.stats import spearmanr
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from threadpoolctl import threadpool_limits
-P=Path(__file__).resolve().parent;R=P.parents[1];sys.path[:0]=[str(R/'scripts'),str(R/'src')]
+P=Path(__file__).resolve().parent;R=P.parent;sys.path[:0]=[str(R/'scripts'),str(R/'src')]
 import aw_moe as AW
 O=P/'gaussian_process/evidence';O.mkdir(parents=True,exist_ok=True)
 with open(P/'primary/evidence/fitted_primary.pkl','rb') as f:z=pickle.load(f)

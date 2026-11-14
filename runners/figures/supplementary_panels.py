@@ -1,7 +1,7 @@
 from pathlib import Path
 import sys,inspect,re,json,hashlib
 import numpy as np,pandas as pd
-H=Path(__file__).resolve().parents[2]/'experiments/studies/evaluation';OLD=H;F=H.parents[2]/'outputs/figures'
+H=Path(__file__).resolve().parents[2]/'experiments/evaluation';OLD=H;F=H.parents[1]/'outputs/figures'
 sys.path.insert(0,str(OLD));import make_revision_figures as m
 m.F=F;m.b.F=F
 def edit(fn,changes):

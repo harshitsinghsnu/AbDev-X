@@ -1,7 +1,7 @@
 """Run the organized, manuscript-specific workflows from any working directory."""
 from pathlib import Path
 import argparse,os,subprocess,sys,json,time
-ROOT=Path(__file__).resolve().parent;P='experiments/studies/'
+ROOT=Path(__file__).resolve().parent;P='experiments/'
 STAGES={
  'primary':[P+'primary/verify_primary.py'],
  'cross_validation':['scripts/compute_awmoe_cv.py'],
@@ -15,9 +15,8 @@ STAGES={
  'gp_kernels':[P+'run_matched_gp.py'],
  'structure_comparison':[P+'structures/evaluate_common.py'],
  'figures':['runners/figures/regenerate.py'],
- 'verify':['tools/validate_results.py'],
 }
-ALL=['primary','cross_validation','ablations','encoders','uncertainty','attributions','delphi_regression','delphi_classification','delphi_statistics','gp_kernels','structure_comparison','figures','verify']
+ALL=['primary','cross_validation','ablations','encoders','uncertainty','attributions','delphi_regression','delphi_classification','delphi_statistics','gp_kernels','structure_comparison','figures']
 def main():
  ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('action',choices=['list','run']);ap.add_argument('stage',nargs='?',choices=list(STAGES)+['all']);ap.add_argument('--dry-run',action='store_true');args=ap.parse_args()
  if args.action=='list':

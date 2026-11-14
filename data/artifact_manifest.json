@@ -1256,912 +1256,912 @@
       "sha256": "7091271641f5439c2be1cf3a00ec963f6bfca359342e3b769c4c7b9884acd33c"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/archival_gp_vector_transcription.csv",
+      "path": "experiments/evaluation/evidence/archival_gp_vector_transcription.csv",
       "bytes": 765,
       "sha256": "8f3b87f5466e25dffc7a34a32a7100ba4f823fc1b76bb3c6131728911a9eda4b"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/encoder_heldout_ci.csv",
+      "path": "experiments/evaluation/evidence/encoder_heldout_ci.csv",
       "bytes": 1858,
       "sha256": "7170e526b8638dae52b0dda80543ffe8b5adc03423f751ccaf0f1624f01af83b"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/expert_refit_weights.csv",
+      "path": "experiments/evaluation/evidence/expert_refit_weights.csv",
       "bytes": 4861,
       "sha256": "3a885ea4ee4e1db9087064e0971e1d96582f0a81fce7d17dba6dc2067cd6504f"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/extension_metric_ci.csv",
+      "path": "experiments/evaluation/evidence/extension_metric_ci.csv",
       "bytes": 3422,
       "sha256": "106fc88aef97a8553369faf53af28f0c8cd896388d953e3b4f9ba4a1620bcd22"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/extension_metric_ci_initial.csv",
+      "path": "experiments/evaluation/evidence/extension_metric_ci_initial.csv",
       "bytes": 3412,
       "sha256": "5f6db4b38eb7c63edc9de080c4194f9c3729ddad8c1a5c823329c501d92841c8"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/figure_audit.json",
+      "path": "experiments/evaluation/evidence/figure_audit.json",
       "bytes": 2203,
       "sha256": "e6ef064f62ea619f4c5a37cc703210ab92ec1507293969991c0d35dc26718fcd"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/jiang_verified.csv",
+      "path": "experiments/evaluation/evidence/jiang_verified.csv",
       "bytes": 865,
       "sha256": "2a7bc6c156f9d1ff4f02bceec3bc36df527e3593abfe2bbfdac3d20b57769c00"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/pooling_cv_folds.csv",
+      "path": "experiments/evaluation/evidence/pooling_cv_folds.csv",
       "bytes": 4523,
       "sha256": "a7e0a7ee990e832afc6721c797bf02ffb975f509ef10d5eaccfc8c6886bf2ba0"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/proxy_shap_feature_ci.csv",
+      "path": "experiments/evaluation/evidence/proxy_shap_feature_ci.csv",
       "bytes": 37068,
       "sha256": "1dddd60df807ee6ac567c9a693011fcebfba59fd95162242149d8e679f0327b9"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/proxy_shap_values_AC-SINS_pH7.4.csv",
+      "path": "experiments/evaluation/evidence/proxy_shap_values_AC-SINS_pH7.4.csv",
       "bytes": 683613,
       "sha256": "780f2bf1ecfc6baa5712e0547be54ba91cf75de558339afb44e971f0e3572e85"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/proxy_shap_values_HIC.csv",
+      "path": "experiments/evaluation/evidence/proxy_shap_values_HIC.csv",
       "bytes": 725438,
       "sha256": "2f10ea3a40de7a64735490d461c30d3e5078bf93dc55768428aef5d84946188a"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/proxy_shap_values_Tm2.csv",
+      "path": "experiments/evaluation/evidence/proxy_shap_values_Tm2.csv",
       "bytes": 532106,
       "sha256": "fab7d642f0672e61b84f52653737d6a3010347e6776873020b9be3cbfdff0e5a"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/regional_descriptor_ci.csv",
+      "path": "experiments/evaluation/evidence/regional_descriptor_ci.csv",
       "bytes": 2226,
       "sha256": "78e536ab567cb74e27da4979be0dbf82e6b97ae43b143644b6040e940d99af47"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/regional_descriptor_ci_initial.csv",
+      "path": "experiments/evaluation/evidence/regional_descriptor_ci_initial.csv",
       "bytes": 2238,
       "sha256": "98b1b0badce37f382ca69c66c24f54879efdd2c2c62088a5295e1b78ea070201"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/screen_cv_folds.csv",
+      "path": "experiments/evaluation/evidence/screen_cv_folds.csv",
       "bytes": 42510,
       "sha256": "bac0ca570e80492b70123a01c44862a7a75aba1ca1b6828c06ee99ae0f402a5b"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/screen_cv_progress.csv",
+      "path": "experiments/evaluation/evidence/screen_cv_progress.csv",
       "bytes": 14341,
       "sha256": "5b1ea9ea0f2371dad55f2cf177fcb36470468363b6ce46fa729dd98ec3452460"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/shared_seven_mean.json",
+      "path": "experiments/evaluation/evidence/shared_seven_mean.json",
       "bytes": 215,
       "sha256": "692683148d71feea180fdc2ccf1cef179e8df1c50b666f19b1fbef6557117f49"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/source_gate_ci.csv",
+      "path": "experiments/evaluation/evidence/source_gate_ci.csv",
       "bytes": 1885,
       "sha256": "82a7027edaed70497dda86d41bfa491eae32a8ae14eb93f0d138c0b5807063e3"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/strategy_ci.csv",
+      "path": "experiments/evaluation/evidence/strategy_ci.csv",
       "bytes": 3904,
       "sha256": "df8eba5d165a88dd92fad3433d46341d57003001938b713e7098d5fad2721749"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/strategy_ci_initial.csv",
+      "path": "experiments/evaluation/evidence/strategy_ci_initial.csv",
       "bytes": 3893,
       "sha256": "988f263c13c8f0ae20077a36f34e29e5db7225b5dae52b5e34f841071c55d015"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/strategy_extension_ci.csv",
+      "path": "experiments/evaluation/evidence/strategy_extension_ci.csv",
       "bytes": 3339,
       "sha256": "fae1ce1ead76ed26b300137c60475232734ccab83f6eb58a06ae92c626b2c6b8"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/strategy_extension_ci_initial.csv",
+      "path": "experiments/evaluation/evidence/strategy_extension_ci_initial.csv",
       "bytes": 3344,
       "sha256": "41eeabe74fda7fe43c9b95d10ef6888279af8b4bf341887fa7a3bf9ed3f26c5c"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/strategy_predictions.csv",
+      "path": "experiments/evaluation/evidence/strategy_predictions.csv",
       "bytes": 268235,
       "sha256": "020df6ea057bd8296c04ed39b579356cf68249582c6f35486e05f4043afba9de"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/transfer_ci.csv",
+      "path": "experiments/evaluation/evidence/transfer_ci.csv",
       "bytes": 2059,
       "sha256": "4b9dbe4bfca8c7445264d700b6445acc63764eae5889146416a4744c323f3294"
     },
     {
-      "path": "experiments/studies/evaluation/evidence/transfer_ci_initial.csv",
+      "path": "experiments/evaluation/evidence/transfer_ci_initial.csv",
       "bytes": 2065,
       "sha256": "99a4031d649cb7910d558f37e92b2cd498dcd0485bb0b13c5dc8bce2f26899f5"
     },
     {
-      "path": "experiments/studies/evaluation/references/amini_crossref.json",
+      "path": "experiments/evaluation/references/amini_crossref.json",
       "bytes": 8273,
       "sha256": "dc3b7b162dd96663bbe284b0c4fc35af7948ba76137d2fb823c72df058541277"
     },
     {
-      "path": "experiments/studies/evaluation/references/citation_order.json",
+      "path": "experiments/evaluation/references/citation_order.json",
       "bytes": 498,
       "sha256": "f0b12703408d79650120e3a077c0fbf9d3d01526f6dc64f556750c2ea33768a4"
     },
     {
-      "path": "experiments/studies/evaluation/references/figshare_search.json",
+      "path": "experiments/evaluation/references/figshare_search.json",
       "bytes": 1305,
       "sha256": "093c4e041ac045a883c9d272ce22bbb820282349eebac8cb46a8fabbc2028115"
     },
     {
-      "path": "experiments/studies/evaluation/references/jiang_figshare_metadata.json",
+      "path": "experiments/evaluation/references/jiang_figshare_metadata.json",
       "bytes": 10999,
       "sha256": "0a81b3995667aaed592e4f0c4903c5e01a7c66f170a073027c767559cdb2ed8e"
     },
     {
-      "path": "experiments/studies/gaussian_process/evidence/figure_named_feature_labels.csv",
+      "path": "experiments/gaussian_process/evidence/figure_named_feature_labels.csv",
       "bytes": 3571,
       "sha256": "94087bbf45e46e9d3c0b5e1e9b872cece2b19a68a45fc0af7044207a3506c1e7"
     },
     {
-      "path": "experiments/studies/gaussian_process/evidence/matched_gp_folds.csv",
+      "path": "experiments/gaussian_process/evidence/matched_gp_folds.csv",
       "bytes": 14113,
       "sha256": "e389caa74297b2a63052dafa2b4a87ce1b5abd8765863255b85c87c5c0a5c3a7"
     },
     {
-      "path": "experiments/studies/gaussian_process/evidence/matched_gp_predictions.csv",
+      "path": "experiments/gaussian_process/evidence/matched_gp_predictions.csv",
       "bytes": 217114,
       "sha256": "e73d5d770a72ef622760b2245654a90e616fff4ad57f951c760ba4821324b6a3"
     },
     {
-      "path": "experiments/studies/gaussian_process/evidence/matched_gp_protocol.json",
+      "path": "experiments/gaussian_process/evidence/matched_gp_protocol.json",
       "bytes": 1062,
       "sha256": "f444caee38afa87990985f925d66fae5ec84046ded8312777d03eaa7a0a2caac"
     },
     {
-      "path": "experiments/studies/gaussian_process/evidence/matched_gp_summary.csv",
+      "path": "experiments/gaussian_process/evidence/matched_gp_summary.csv",
       "bytes": 989,
       "sha256": "ce10a94cdbd8345c5d786f7328cfc702b516a59842b953f0ae3220cba09f1a6b"
     },
     {
-      "path": "experiments/studies/frozen_delphi/matched_predictions.csv",
+      "path": "experiments/frozen_delphi/matched_predictions.csv",
       "bytes": 56383,
       "sha256": "51582c925da01c3c630286c2f90584cc02db229b706ec11b66649bc8780507a7"
     },
     {
-      "path": "experiments/studies/frozen_delphi/paired_comparison.csv",
+      "path": "experiments/frozen_delphi/paired_comparison.csv",
       "bytes": 841,
       "sha256": "03c2d331df1f262211c2f151947959cf2d161987eadddc0d241547221c1a8cce"
     },
     {
-      "path": "experiments/studies/frozen_delphi/protocol.json",
-      "bytes": 1768,
-      "sha256": "bf4bc992531881f4cbc0a4d52bd16d8c1994beb4566a0cae511a7c65cb752144"
+      "path": "experiments/frozen_delphi/protocol.json",
+      "bytes": 1750,
+      "sha256": "a5fecbdaa047d7926e2ee5929c14665f666dc2d912e5472da8e4ab70fcdfd224"
     },
     {
-      "path": "experiments/studies/frozen_delphi/zenodo_manifest.json",
+      "path": "experiments/frozen_delphi/zenodo_manifest.json",
       "bytes": 29896,
       "sha256": "11b37378be9b91458e127198dd0a396fd563ae4f107566a1644237dfde687f66"
     },
     {
-      "path": "experiments/studies/cartoons/evidence/figure_named_feature_labels.csv",
+      "path": "experiments/cartoons/evidence/figure_named_feature_labels.csv",
       "bytes": 3571,
       "sha256": "94087bbf45e46e9d3c0b5e1e9b872cece2b19a68a45fc0af7044207a3506c1e7"
     },
     {
-      "path": "experiments/studies/cartoons/structures/render_manifest.json",
-      "bytes": 2985,
-      "sha256": "101b2625a0f546c47bf1349c2fea6174b29388e5b9531f2847f192e319934f69"
+      "path": "experiments/cartoons/structures/render_manifest.json",
+      "bytes": 2886,
+      "sha256": "178acf78787d27804e518594e83bf0acab4fa65dc5d992b68f51554cda8e1ae4"
     },
     {
-      "path": "experiments/studies/cartoons/structures/residue_AC-SINS.png",
+      "path": "experiments/cartoons/structures/residue_AC-SINS.png",
       "bytes": 181038,
       "sha256": "851d1b729d893142fe0b29d97df5c2f9a7ee0fd02c28a1fbde7f98c1d298eca6"
     },
     {
-      "path": "experiments/studies/cartoons/structures/residue_HAC.png",
+      "path": "experiments/cartoons/structures/residue_HAC.png",
       "bytes": 185918,
       "sha256": "c0f2408a59a02e174a752aeafbcfd3402b673fda6c5ed1764cf10c3f390f8dce"
     },
     {
-      "path": "experiments/studies/cartoons/structures/residue_HIC.png",
+      "path": "experiments/cartoons/structures/residue_HIC.png",
       "bytes": 195317,
       "sha256": "04537b8201bf9263eda488a9c4d34c5a10bdbaa3a51533b6aea299b180738af4"
     },
     {
-      "path": "experiments/studies/cartoons/structures/residue_PR_CHO.png",
+      "path": "experiments/cartoons/structures/residue_PR_CHO.png",
       "bytes": 209095,
       "sha256": "a2188d0fd3602c312b29a18d6a85b82a658df11830209d0a92dcf10bc9e66b71"
     },
     {
-      "path": "experiments/studies/cartoons/structures/residue_SEC.png",
+      "path": "experiments/cartoons/structures/residue_SEC.png",
       "bytes": 202018,
       "sha256": "0f74cd8c2c1cc889c1682e51d77e3ab4bb286fdaef9e4a99184f127bdd0ae0a5"
     },
     {
-      "path": "experiments/studies/cartoons/structures/residue_SMAC.png",
+      "path": "experiments/cartoons/structures/residue_SMAC.png",
       "bytes": 203982,
       "sha256": "2c14030557a8af03ed731d80965cd4b542723ddd1de4542494c9b3c6dec10759"
     },
     {
-      "path": "experiments/studies/cartoons/structures/residue_Titer.png",
+      "path": "experiments/cartoons/structures/residue_Titer.png",
       "bytes": 204716,
       "sha256": "4bb78da170ada0bd9be1740d1f7f111984ae21207c24d0f4d5e11c7fa425d6ae"
     },
     {
-      "path": "experiments/studies/cartoons/structures/residue_Tm1.png",
+      "path": "experiments/cartoons/structures/residue_Tm1.png",
       "bytes": 204201,
       "sha256": "75b737d777509ad2cf98760114a3be024449636249c5425f9f84e803b3d98121"
     },
     {
-      "path": "experiments/studies/cartoons/structures/residue_Tm2.png",
+      "path": "experiments/cartoons/structures/residue_Tm2.png",
       "bytes": 210176,
       "sha256": "0c18045243e878f3fb353141fb6e66da56262d84c2d67d15f2c85eb667d1a6c2"
     },
     {
-      "path": "experiments/studies/cartoons/structures/residue_Tonset.png",
+      "path": "experiments/cartoons/structures/residue_Tonset.png",
       "bytes": 207351,
       "sha256": "c9bf4dd70f11e9d192fdd88496f7b9c57daeedd07bc25648395538b5d1daa842"
     },
     {
-      "path": "experiments/studies/cartoons/structures/cropped/residue_AC-SINS.png",
+      "path": "experiments/cartoons/structures/cropped/residue_AC-SINS.png",
       "bytes": 164371,
       "sha256": "69bc7e5832a51c55d26e5a2b34d072d3b88e29eb3ad7cdba25e1c53504395755"
     },
     {
-      "path": "experiments/studies/cartoons/structures/cropped/residue_HAC.png",
+      "path": "experiments/cartoons/structures/cropped/residue_HAC.png",
       "bytes": 169946,
       "sha256": "5708b309c3bf9de7776391eb8229a8fa98d345cf0f6b455174a76595223ede8d"
     },
     {
-      "path": "experiments/studies/cartoons/structures/cropped/residue_HIC.png",
+      "path": "experiments/cartoons/structures/cropped/residue_HIC.png",
       "bytes": 178342,
       "sha256": "6fde22c77e2023492550587d172d4e55d19eaae99aef053df3e2715f65e1521c"
     },
     {
-      "path": "experiments/studies/cartoons/structures/cropped/residue_PR_CHO.png",
+      "path": "experiments/cartoons/structures/cropped/residue_PR_CHO.png",
       "bytes": 191992,
       "sha256": "00b1fd204b749cdb40cfed00a202189e526265dc46d1d05420f58bda1cb225a7"
     },
     {
-      "path": "experiments/studies/cartoons/structures/cropped/residue_SEC.png",
+      "path": "experiments/cartoons/structures/cropped/residue_SEC.png",
       "bytes": 185164,
       "sha256": "542cb53df49f4e549e0678de6b0ad051acc156eb6cd39e0f1a6014cb03425ea5"
     },
     {
-      "path": "experiments/studies/cartoons/structures/cropped/residue_SMAC.png",
+      "path": "experiments/cartoons/structures/cropped/residue_SMAC.png",
       "bytes": 187163,
       "sha256": "7ec9b15c3196478c395e66e773f2d0eb8a2a99744f7a67615db8258f9e0877c7"
     },
     {
-      "path": "experiments/studies/cartoons/structures/cropped/residue_Titer.png",
+      "path": "experiments/cartoons/structures/cropped/residue_Titer.png",
       "bytes": 187635,
       "sha256": "bb1e1c25ebee70b8f47e842100e9476c5b735a69ef82bab3df4abb200f2c6530"
     },
     {
-      "path": "experiments/studies/cartoons/structures/cropped/residue_Tm1.png",
+      "path": "experiments/cartoons/structures/cropped/residue_Tm1.png",
       "bytes": 187661,
       "sha256": "0a7d09e38811940e27cde24e12843773f178b036b5981caa09ab9a674133f4ec"
     },
     {
-      "path": "experiments/studies/cartoons/structures/cropped/residue_Tm2.png",
+      "path": "experiments/cartoons/structures/cropped/residue_Tm2.png",
       "bytes": 193150,
       "sha256": "388ecd7879d99d560b32dfbbe5efc69c172d7c7925f2d76d807eb290d890394c"
     },
     {
-      "path": "experiments/studies/cartoons/structures/cropped/residue_Tonset.png",
+      "path": "experiments/cartoons/structures/cropped/residue_Tonset.png",
       "bytes": 190315,
       "sha256": "d7784dd1f13df22f2f97fa6cb67bea3ed933e67d2a3b37365cbf5deb7402c94e"
     },
     {
-      "path": "experiments/studies/attribution/evidence/attribution_validation.json",
+      "path": "experiments/attribution/evidence/attribution_validation.json",
       "bytes": 633,
       "sha256": "3104247cfe860fe7ffdc263ffcdb69cc9d4e052b3c354bb30115e31c0cfffc58"
     },
     {
-      "path": "experiments/studies/attribution/evidence/figure_named_feature_labels.csv",
+      "path": "experiments/attribution/evidence/figure_named_feature_labels.csv",
       "bytes": 3571,
       "sha256": "94087bbf45e46e9d3c0b5e1e9b872cece2b19a68a45fc0af7044207a3506c1e7"
     },
     {
-      "path": "experiments/studies/attribution/evidence/model_manifest.json",
+      "path": "experiments/attribution/evidence/model_manifest.json",
       "bytes": 936,
       "sha256": "70a8004afcc13bbe02d6b540153a814ac90b78147b75bd2d4d0f587d3195ae70"
     },
     {
-      "path": "experiments/studies/attribution/evidence/prediction_attribution_completeness.csv",
+      "path": "experiments/attribution/evidence/prediction_attribution_completeness.csv",
       "bytes": 1159,
       "sha256": "c77df16cc53aa126ad58d0e544e5afe88e8466a73fc68232fca438e2d0e8f416"
     },
     {
-      "path": "experiments/studies/attribution/evidence/primary_residue_shap.csv",
+      "path": "experiments/attribution/evidence/primary_residue_shap.csv",
       "bytes": 194792,
       "sha256": "54a886c5f77737fe933263092f61b58a9e11afada2f467c5d908973c9370211c"
     },
     {
-      "path": "experiments/studies/attribution/evidence/residue_shap_manifest.json",
+      "path": "experiments/attribution/evidence/residue_shap_manifest.json",
       "bytes": 1143,
       "sha256": "e05ba1d4e17f65022f2f5132350841444f427eeb4b0cdfe5755f1bcf51e2bf56"
     },
     {
-      "path": "experiments/studies/attribution/evidence/surface_render_manifest.json",
+      "path": "experiments/attribution/evidence/surface_render_manifest.json",
       "bytes": 431,
       "sha256": "560e47d1009b2547130657c7aa2149efe6abb01b9d3ea58be348d74c3c1bece6"
     },
     {
-      "path": "experiments/studies/plotting/narrative.json",
+      "path": "experiments/plotting/narrative.json",
       "bytes": 15196,
       "sha256": "d195cb9254fcc21db5efd0dfb65178293c9519d6ab4c905d779a9b680a4b65e3"
     },
     {
-      "path": "experiments/studies/plotting/evidence/archival_gp_vector_transcription.csv",
+      "path": "experiments/plotting/evidence/archival_gp_vector_transcription.csv",
       "bytes": 765,
       "sha256": "8f3b87f5466e25dffc7a34a32a7100ba4f823fc1b76bb3c6131728911a9eda4b"
     },
     {
-      "path": "experiments/studies/plotting/evidence/figure_typography_audit.json",
+      "path": "experiments/plotting/evidence/figure_typography_audit.json",
       "bytes": 3105,
       "sha256": "f03ac24b44c60e4987ad51a952ee601eb06319298146446059dca8ec4f799abf"
     },
     {
-      "path": "experiments/studies/plotting/evidence/model_manifest.json",
+      "path": "experiments/plotting/evidence/model_manifest.json",
       "bytes": 936,
       "sha256": "70a8004afcc13bbe02d6b540153a814ac90b78147b75bd2d4d0f587d3195ae70"
     },
     {
-      "path": "experiments/studies/plotting/evidence/primary_paired_significance.csv",
+      "path": "experiments/plotting/evidence/primary_paired_significance.csv",
       "bytes": 1033,
       "sha256": "978c180533182a1ab57e35b75c530df981eac186a218b4c16b9fc64ff2e8c446"
     },
     {
-      "path": "experiments/studies/plotting/evidence/primary_reproduction.csv",
+      "path": "experiments/plotting/evidence/primary_reproduction.csv",
       "bytes": 1285,
       "sha256": "904b8ff0fdf5fa3c90853bf67d1c1ec6692830524c00143eca52d4275a34d8ec"
     },
     {
-      "path": "experiments/studies/plotting/evidence/primary_source_ablation.csv",
+      "path": "experiments/plotting/evidence/primary_source_ablation.csv",
       "bytes": 2409,
       "sha256": "5a937c2a3c6b017d87d373a7558142b1c1e5b1e3fe6892dbfd8151f5911432f1"
     },
     {
-      "path": "experiments/studies/plotting/references/abb3.json",
+      "path": "experiments/plotting/references/abb3.json",
       "bytes": 20133,
       "sha256": "37a2de8c1479e34651088db6f5cc0f260a792ed500854749edb1cc22d5cb618b"
     },
     {
-      "path": "experiments/studies/plotting/references/ablang2.json",
+      "path": "experiments/plotting/references/ablang2.json",
       "bytes": 23545,
       "sha256": "d7a4fbbad13b295a6c2d9e2aec649a41c663c7f5059bd3ca91591c0ec43f8c3e"
     },
     {
-      "path": "experiments/studies/plotting/references/aggrescan3d.json",
+      "path": "experiments/plotting/references/aggrescan3d.json",
       "bytes": 9690,
       "sha256": "1b275a85693a012942fc62b1b367eaed102dd9ea1dc6965d8efe9780b26a7fec"
     },
     {
-      "path": "experiments/studies/plotting/references/anarci.json",
+      "path": "experiments/plotting/references/anarci.json",
       "bytes": 9875,
       "sha256": "70020eebc1100e647bf3f9c00e86aee56cfcbf283a6ca94ec2a25ed24aa9cd4e"
     },
     {
-      "path": "experiments/studies/plotting/references/antifold.json",
+      "path": "experiments/plotting/references/antifold.json",
       "bytes": 19616,
       "sha256": "05d9d166d80eb35995263d5bfce96429f262306d7eb1daef97e3303a6f2d87a2"
     },
     {
-      "path": "experiments/studies/plotting/references/bca.json",
+      "path": "experiments/plotting/references/bca.json",
       "bytes": 9475,
       "sha256": "3aa28175513f939cac998345cde579ae004116de49f193db1eb2b9d1af27f6bf"
     },
     {
-      "path": "experiments/studies/plotting/references/chennamsetty2009sap.json",
+      "path": "experiments/plotting/references/chennamsetty2009sap.json",
       "bytes": 12093,
       "sha256": "8a86082083020b7c5ae500a6fb59cf653958fb0eb6afac7a4f7c269e77f2868f"
     },
     {
-      "path": "experiments/studies/plotting/references/doi_metadata.json",
+      "path": "experiments/plotting/references/doi_metadata.json",
       "bytes": 484717,
       "sha256": "ca43052872a858323188e83b881d134621df3897492bf40f84579bb4a32dcd65"
     },
     {
-      "path": "experiments/studies/plotting/references/eisenberg.json",
+      "path": "experiments/plotting/references/eisenberg.json",
       "bytes": 15346,
       "sha256": "362a638e1c52d9a15b38dc4bf30bb7a2362c603c58201a1f4c182e9ef930a4c4"
     },
     {
-      "path": "experiments/studies/plotting/references/freesasa.json",
+      "path": "experiments/plotting/references/freesasa.json",
       "bytes": 17305,
       "sha256": "6b3dbf15f656b1b8802127126c9c59865eb758f20cac4b2ee86bd6db99399ad1"
     },
     {
-      "path": "experiments/studies/plotting/references/ginkgo2026.json",
+      "path": "experiments/plotting/references/ginkgo2026.json",
       "bytes": 26021,
       "sha256": "61b0477a2fe7eda6bbd993f21211a54d96f4b1ad118badaecf6c10b6bebf2bd2"
     },
     {
-      "path": "experiments/studies/plotting/references/harris.json",
+      "path": "experiments/plotting/references/harris.json",
       "bytes": 22091,
       "sha256": "adc9e21cada0fba53b07fe83ecdd5991831044ca3488b535b5ae3689b89b1448"
     },
     {
-      "path": "experiments/studies/plotting/references/igbert.json",
+      "path": "experiments/plotting/references/igbert.json",
       "bytes": 24471,
       "sha256": "ed083b3b9a4b922852aee42db587674f7a9b979f873e267295db4ce1ce79c83b"
     },
     {
-      "path": "experiments/studies/plotting/references/jain2017.json",
+      "path": "experiments/plotting/references/jain2017.json",
       "bytes": 15928,
       "sha256": "e5dfab96aea4cf8f906cfda419f744fefed71a7d4cc3b9be3a4ffae5beb43f7f"
     },
     {
-      "path": "experiments/studies/plotting/references/jiang2026.json",
+      "path": "experiments/plotting/references/jiang2026.json",
       "bytes": 22737,
       "sha256": "02dfc711d37342a0bbe816ed835e967e032d48c183853b6690ac613a85879a46"
     },
     {
-      "path": "experiments/studies/plotting/references/kyte.json",
+      "path": "experiments/plotting/references/kyte.json",
       "bytes": 21431,
       "sha256": "fb3740a2887f425c1959ba3482467db0266c4a1898cae4474897b6ca0d4d14d9"
     },
     {
-      "path": "experiments/studies/plotting/references/lin2023esm2.json",
+      "path": "experiments/plotting/references/lin2023esm2.json",
       "bytes": 27017,
       "sha256": "9ba65d569fcd7c4ad9644951104f0cd20548f33d6ddc46b9d8b7452bd350dbe2"
     },
     {
-      "path": "experiments/studies/plotting/references/progen2.json",
+      "path": "experiments/plotting/references/progen2.json",
       "bytes": 26862,
       "sha256": "dc943ffc4758aa16bfb7d7b24750f29db1ab4144e7ef403cfc80d6d168357897"
     },
     {
-      "path": "experiments/studies/plotting/references/prophet2025.json",
+      "path": "experiments/plotting/references/prophet2025.json",
       "bytes": 24433,
       "sha256": "eb85eba164e61ed9a6fd76195b86952a4cc78379e2d00611b10a74c4ee24fb49"
     },
     {
-      "path": "experiments/studies/plotting/references/prottrans.json",
+      "path": "experiments/plotting/references/prottrans.json",
       "bytes": 26156,
       "sha256": "03baa123aa4d7ca9fabf296e6260af2ecfff2b6df49ce50443a360733622dbed"
     },
     {
-      "path": "experiments/studies/plotting/references/raybould2019tap.json",
+      "path": "experiments/plotting/references/raybould2019tap.json",
       "bytes": 14685,
       "sha256": "59f68b4c004650251805fb04d8b1ebdf55cd75cb9870cb2de3c1da25efe75a20"
     },
     {
-      "path": "experiments/studies/plotting/references/reference_audit.csv",
+      "path": "experiments/plotting/references/reference_audit.csv",
       "bytes": 10156,
       "sha256": "f58c2db94fdcd6cf11c681388025b300d78e85790645985a7b062c8a1f4a7e1f"
     },
     {
-      "path": "experiments/studies/plotting/references/reference_audit.json",
+      "path": "experiments/plotting/references/reference_audit.json",
       "bytes": 13374,
       "sha256": "3c80cef0ececc52bc36305235f1660a266c6567479f44d362601dbebee952eb3"
     },
     {
-      "path": "experiments/studies/plotting/references/rejected_wrong_bca_doi.json",
+      "path": "experiments/plotting/references/rejected_wrong_bca_doi.json",
       "bytes": 6458,
       "sha256": "257b811f41f669f5bb0d82e4a8ac7777945075d88e62567f1de3e8230ad6cf5a"
     },
     {
-      "path": "experiments/studies/plotting/references/ridge.json",
+      "path": "experiments/plotting/references/ridge.json",
       "bytes": 9150,
       "sha256": "ad5666de58f86d838bd80f5a16526e2225ca5dcca5ebb340730b6582797bccb5"
     },
     {
-      "path": "experiments/studies/plotting/references/stacking.json",
+      "path": "experiments/plotting/references/stacking.json",
       "bytes": 11681,
       "sha256": "4c1f67301f495d7727d09382010675f0848e35883dbcb8656ed2e3068d8a564b"
     },
     {
-      "path": "experiments/studies/plotting/references/tabpfn.json",
+      "path": "experiments/plotting/references/tabpfn.json",
       "bytes": 31404,
       "sha256": "8628e8d24f3469801f49ff4d4cee0b6b9d8b723b9c6adc0dc92f60817de3da9f"
     },
     {
-      "path": "experiments/studies/plotting/references/xgboost.json",
+      "path": "experiments/plotting/references/xgboost.json",
       "bytes": 11022,
       "sha256": "694fd8eba1d4a011d903db472fb84662eba5d63f305ae423ddd33f436c5af9be"
     },
     {
-      "path": "experiments/studies/recorded_results/architecture_text_changes.json",
+      "path": "experiments/recorded_results/architecture_text_changes.json",
       "bytes": 1151,
       "sha256": "d94de01a1be8e9232c8dec8f0bc12d925b98f29f69591f8e38990dbbf78fc843"
     },
     {
-      "path": "experiments/studies/recorded_results/validation_report.json",
+      "path": "experiments/recorded_results/validation_report.json",
       "bytes": 2452,
       "sha256": "928d6cd7bbb0fdde3014cead42e0abcb19c92682e0901ca0fe72e6cc53f94128"
     },
     {
-      "path": "experiments/studies/recorded_results/evidence/awmoe_all9.csv",
+      "path": "experiments/recorded_results/evidence/awmoe_all9.csv",
       "bytes": 1285,
       "sha256": "904b8ff0fdf5fa3c90853bf67d1c1ec6692830524c00143eca52d4275a34d8ec"
     },
     {
-      "path": "experiments/studies/recorded_results/evidence/awmoe_cv_errorbars.csv",
+      "path": "experiments/recorded_results/evidence/awmoe_cv_errorbars.csv",
       "bytes": 1358,
       "sha256": "7dec5d8dd2260141cdee82886d42286dbede6ff33abd94f25e9b46a3edeba859"
     },
     {
-      "path": "experiments/studies/recorded_results/evidence/bootstrap_ci_all.csv",
+      "path": "experiments/recorded_results/evidence/bootstrap_ci_all.csv",
       "bytes": 1221,
       "sha256": "715d5d72abe5477741dd3606e757cd48e8ad9d87c5244adc4acdecad46246a52"
     },
     {
-      "path": "experiments/studies/recorded_results/evidence/cv_errorbars.csv",
+      "path": "experiments/recorded_results/evidence/cv_errorbars.csv",
       "bytes": 1023,
       "sha256": "0b29efcebdf911614099806f15244e02623b5087ea18fdb7ad1d55f5d5966380"
     },
     {
-      "path": "experiments/studies/recorded_results/evidence/exp_ablation.csv",
+      "path": "experiments/recorded_results/evidence/exp_ablation.csv",
       "bytes": 1790,
       "sha256": "d740ee3474c407d7fb1e4282f5a450e07fb6c8e4b82efdfaa9f17ef7ccf2d11f"
     },
     {
-      "path": "experiments/studies/recorded_results/evidence/exp_ig.csv",
+      "path": "experiments/recorded_results/evidence/exp_ig.csv",
       "bytes": 180,
       "sha256": "a6d825aed4f75b5da33215b6e6ab9e9b9f21e1378994e26864bed8215573b646"
     },
     {
-      "path": "experiments/studies/recorded_results/evidence/exp_learning_curves.csv",
+      "path": "experiments/recorded_results/evidence/exp_learning_curves.csv",
       "bytes": 807,
       "sha256": "ffd9b0145e5004d0de641477b02043e7cd3449dbb775d4c3620de47fc12aade7"
     },
     {
-      "path": "experiments/studies/recorded_results/evidence/exp_significance.csv",
+      "path": "experiments/recorded_results/evidence/exp_significance.csv",
       "bytes": 758,
       "sha256": "bb01d4d31023ea54192a56cfa28f5970335fe2cf796a4ec05dae771a198bd47a"
     },
     {
-      "path": "experiments/studies/recorded_results/evidence/final_evaluation_summary.csv",
+      "path": "experiments/recorded_results/evidence/final_evaluation_summary.csv",
       "bytes": 1753,
       "sha256": "42041114959cf5da1b59e25c719a4bb98a286265469ac467334394ddcc2eae34"
     },
     {
-      "path": "experiments/studies/recorded_results/evidence/plm_ablation.csv",
+      "path": "experiments/recorded_results/evidence/plm_ablation.csv",
       "bytes": 524,
       "sha256": "bafc287649d481078eb7e27e14b093801d9843a59c0454ba4808bfdfdbc8a931"
     },
     {
-      "path": "experiments/studies/recorded_results/evidence/primary_component_reproduction.csv",
+      "path": "experiments/recorded_results/evidence/primary_component_reproduction.csv",
       "bytes": 2871,
       "sha256": "2b16e7c3b8733576d31ddfac69ace7e5b94beeeb1252a11351b20818975e170f"
     },
     {
-      "path": "experiments/studies/recorded_results/evidence/primary_learning_folds.csv",
+      "path": "experiments/recorded_results/evidence/primary_learning_folds.csv",
       "bytes": 6282,
       "sha256": "f759f29794555eb902d816817076456dca906270860aab42b86b7ed1c7b058cc"
     },
     {
-      "path": "experiments/studies/recorded_results/evidence/primary_paired_significance.csv",
+      "path": "experiments/recorded_results/evidence/primary_paired_significance.csv",
       "bytes": 1033,
       "sha256": "978c180533182a1ab57e35b75c530df981eac186a218b4c16b9fc64ff2e8c446"
     },
     {
-      "path": "experiments/studies/recorded_results/evidence/primary_reproduction.csv",
+      "path": "experiments/recorded_results/evidence/primary_reproduction.csv",
       "bytes": 1285,
       "sha256": "904b8ff0fdf5fa3c90853bf67d1c1ec6692830524c00143eca52d4275a34d8ec"
     },
     {
-      "path": "experiments/studies/recorded_results/evidence/primary_source_ablation.csv",
+      "path": "experiments/recorded_results/evidence/primary_source_ablation.csv",
       "bytes": 2409,
       "sha256": "5a937c2a3c6b017d87d373a7558142b1c1e5b1e3fe6892dbfd8151f5911432f1"
     },
     {
-      "path": "experiments/studies/recorded_results/evidence/representation_weights.csv",
+      "path": "experiments/recorded_results/evidence/representation_weights.csv",
       "bytes": 306,
       "sha256": "32a827888e8a01e9a0a3d35e8ee886f2f15268da18fb0bbd6aa6275426e4babc"
     },
     {
-      "path": "experiments/studies/delphi/classification_epoch_selection.csv",
+      "path": "experiments/delphi/classification_epoch_selection.csv",
       "bytes": 157,
       "sha256": "71686cee1a67ba17f2aef297d1f1e0c5ba557c060f29edbbe20456049df6cabd"
     },
     {
-      "path": "experiments/studies/delphi/classification_predictions.csv",
+      "path": "experiments/delphi/classification_predictions.csv",
       "bytes": 188942,
       "sha256": "03992e20918409d086e57cd14ff54f0d8aa0938a700973843c94ac4da8f1143e"
     },
     {
-      "path": "experiments/studies/delphi/classification_protocol.json",
+      "path": "experiments/delphi/classification_protocol.json",
       "bytes": 869,
       "sha256": "00044d438e4cc0a6dcb4500f906ad99411566722e70dd7fcfb60538267b3dcba"
     },
     {
-      "path": "experiments/studies/delphi/classification_scores.csv",
+      "path": "experiments/delphi/classification_scores.csv",
       "bytes": 4006,
       "sha256": "557da4029be0cf15734302f574e6cf1708ae6d987be2d772e52d07781de53467"
     },
     {
-      "path": "experiments/studies/delphi/CV_and_external_summary.csv",
+      "path": "experiments/delphi/CV_and_external_summary.csv",
       "bytes": 1453,
       "sha256": "0b65dda76e8664046e480fd5ad62dffb2d0d0617394594432602e7e100e9cd2c"
     },
     {
-      "path": "experiments/studies/delphi/epoch_selection.csv",
+      "path": "experiments/delphi/epoch_selection.csv",
       "bytes": 239,
       "sha256": "608d01d7c0aef2b32b7d282fb4c1f8fe97c0fdbe6385eb50187e8e6ce869136a"
     },
     {
-      "path": "experiments/studies/delphi/external_test_manifest.csv",
+      "path": "experiments/delphi/external_test_manifest.csv",
       "bytes": 24560,
       "sha256": "41ecdd9c84694f17867d5a2d2348641b8762c14982744c3ff14b80fd31eb0182"
     },
     {
-      "path": "experiments/studies/delphi/paired_external_predictions.csv",
+      "path": "experiments/delphi/paired_external_predictions.csv",
       "bytes": 123271,
       "sha256": "7a4e0e307d01e0dd6044a116789976dbaa69fd42d6858aad56b95cbf16bc56ff"
     },
     {
-      "path": "experiments/studies/delphi/paired_results_all_seeds.csv",
+      "path": "experiments/delphi/paired_results_all_seeds.csv",
       "bytes": 6440,
       "sha256": "d2cd49201752d2f8f8a3df700461a2511aea0a819ff65c5401aa4bcfe132e218"
     },
     {
-      "path": "experiments/studies/delphi/primary_seed42_results.csv",
+      "path": "experiments/delphi/primary_seed42_results.csv",
       "bytes": 1657,
       "sha256": "90643eb5194d482de07e7e2949ab9791ca28fb0d4387617d5efa85c099a5492a"
     },
     {
-      "path": "experiments/studies/delphi/regression_predictions.csv",
+      "path": "experiments/delphi/regression_predictions.csv",
       "bytes": 93924,
       "sha256": "4ff890274eb9455a4e5554801c76044729ff84194e95e671becb6cab9f87c4ac"
     },
     {
-      "path": "experiments/studies/delphi/regression_protocol.json",
+      "path": "experiments/delphi/regression_protocol.json",
       "bytes": 1381,
       "sha256": "3eb36744720c2f245d93a786b318d9ef4eaa57b8df1de46d29d1e6c5bd951f22"
     },
     {
-      "path": "experiments/studies/delphi/regression_scores.csv",
+      "path": "experiments/delphi/regression_scores.csv",
       "bytes": 1519,
       "sha256": "2013ff8e17f14f5e813d2f6fb732f298c7d3c1222a2521cb8e1bbc4f4b607cfe"
     },
     {
-      "path": "experiments/studies/delphi/training_manifest.csv",
+      "path": "experiments/delphi/training_manifest.csv",
       "bytes": 7236,
       "sha256": "e24bbf365a34f5db4d994a2456cb32645d730960f4e8500dbf33cbacb708cf4b"
     },
     {
-      "path": "experiments/studies/delphi/validation.json",
+      "path": "experiments/delphi/validation.json",
       "bytes": 452,
       "sha256": "fb2d5e9cc4e1e4b180a41cb91cf3c2bdf84b32bbadeb53b25af0c1cacb41d8a8"
     },
     {
-      "path": "experiments/studies/structures/alphafold3_jobs.json",
+      "path": "experiments/structures/alphafold3_jobs.json",
       "bytes": 193444,
       "sha256": "7ca32fc7f41e1c45210df10940956de47678e5ac41f30f708f3650998c491f4b"
     },
     {
-      "path": "experiments/studies/structures/alphafold3_run.csv",
+      "path": "experiments/structures/alphafold3_run.csv",
       "bytes": 46837,
       "sha256": "8f7a94a4b6148b64b30df4266d015d13e0cf7228d5d728503d1e5c4a09afa4c6"
     },
     {
-      "path": "experiments/studies/structures/benchmark_protocol.json",
+      "path": "experiments/structures/benchmark_protocol.json",
       "bytes": 2516,
       "sha256": "c110acc93c6cac4bb102d9f65e913d4fb3b8ab6ac98baa6ae6c572da1c6cf991"
     },
     {
-      "path": "experiments/studies/structures/common_features_ABodyBuilder3.csv",
+      "path": "experiments/structures/common_features_ABodyBuilder3.csv",
       "bytes": 118526,
       "sha256": "6e42090a0defce0aaba936e7988e07a74b5219b9d5f05c97768368fc9a9ed301"
     },
     {
-      "path": "experiments/studies/structures/common_features_AlphaFold3.csv",
+      "path": "experiments/structures/common_features_AlphaFold3.csv",
       "bytes": 119174,
       "sha256": "76b92b52dcfb0b868ba2f2e9f61c877afd63676b56dc60cd7db6c8ad90cb280e"
     },
     {
-      "path": "experiments/studies/structures/common_features_ESMFold.csv",
+      "path": "experiments/structures/common_features_ESMFold.csv",
       "bytes": 119221,
       "sha256": "83c18ddb18f7083bc874d38f7256d8751ab966b4b9c8c74d6848c973f0bd444d"
     },
     {
-      "path": "experiments/studies/structures/common_features_IgFold.csv",
+      "path": "experiments/structures/common_features_IgFold.csv",
       "bytes": 119258,
       "sha256": "caa47b85394f150ca682c9a0eb171ed33f45e608ed1707542b51917de64fcc98"
     },
     {
-      "path": "experiments/studies/structures/common_features_MOE.csv",
+      "path": "experiments/structures/common_features_MOE.csv",
       "bytes": 119160,
       "sha256": "7b4e773ff08b55513fe407f747049009a2ef8a5ca90aa89dcf7da157414f9b53"
     },
     {
-      "path": "experiments/studies/structures/esmfold_pilot.csv",
+      "path": "experiments/structures/esmfold_pilot.csv",
       "bytes": 248,
       "sha256": "0b5c1fc03c70310d04edf039709834774c26a2fa36394b9ef63956b1466a2ffb"
     },
     {
-      "path": "experiments/studies/structures/esmfold_run.csv",
+      "path": "experiments/structures/esmfold_run.csv",
       "bytes": 31422,
       "sha256": "609bd8e068eed362d2e5250bcc46f6f8d1607f0b33bd610cfac9fdd4e22a3ef3"
     },
     {
-      "path": "experiments/studies/structures/execution_status.json",
+      "path": "experiments/structures/execution_status.json",
       "bytes": 1275,
       "sha256": "2524e186007c665c939a9ba9139faa9f3fe297b9f623efd5f33c48232a0683a4"
     },
     {
-      "path": "experiments/studies/structures/feature_status_ABodyBuilder3.csv",
+      "path": "experiments/structures/feature_status_ABodyBuilder3.csv",
       "bytes": 21928,
       "sha256": "af58af117f3cdf93da9a459703a5d724cd558b0e3346121ab5460b8338b7113a"
     },
     {
-      "path": "experiments/studies/structures/feature_status_AlphaFold3.csv",
+      "path": "experiments/structures/feature_status_AlphaFold3.csv",
       "bytes": 20458,
       "sha256": "53a734cc2eb9888683b2bf6c261e75e216cc738f394bbb802ce4bd32ee43c3dd"
     },
     {
-      "path": "experiments/studies/structures/feature_status_ESMFold.csv",
+      "path": "experiments/structures/feature_status_ESMFold.csv",
       "bytes": 19489,
       "sha256": "bbe2bc97641db41450aa3797555dbb3d8ee919b2bcc9c5ce72a102df70230b59"
     },
     {
-      "path": "experiments/studies/structures/feature_status_IgFold.csv",
+      "path": "experiments/structures/feature_status_IgFold.csv",
       "bytes": 18991,
       "sha256": "c8445fa292909abb79d7d94769abb2bf5b6031ca4c7e4c194547e107e0a7cfaa"
     },
     {
-      "path": "experiments/studies/structures/feature_status_MOE.csv",
+      "path": "experiments/structures/feature_status_MOE.csv",
       "bytes": 18105,
       "sha256": "6d2aa8f11f74cb35afd143e26d95006dc4532c874943fe353860a0229879b510"
     },
     {
-      "path": "experiments/studies/structures/igfold_jobs.json",
+      "path": "experiments/structures/igfold_jobs.json",
       "bytes": 115530,
       "sha256": "cc26c22445e47eb78fa7f03de859126da9e150c76991524923c9d75f7633558c"
     },
     {
-      "path": "experiments/studies/structures/igfold_pilot.csv",
+      "path": "experiments/structures/igfold_pilot.csv",
       "bytes": 215,
       "sha256": "fe85eecfe5374cd5868e093f52edeebf12055fb7671f110f45abb9a33559949e"
     },
     {
-      "path": "experiments/studies/structures/igfold_run.csv",
+      "path": "experiments/structures/igfold_run.csv",
       "bytes": 27804,
       "sha256": "def78a41618a1f372f2ed55f503f98e7f8345288d77128d51b6c74e8dc4460ff"
     },
     {
-      "path": "experiments/studies/structures/paired_sequences_and_folds.csv",
+      "path": "experiments/structures/paired_sequences_and_folds.csv",
       "bytes": 87313,
       "sha256": "f317bd095e05742d0412a371a174b16d9c31061ec932bc78adb3b1e9b47fabb4"
     },
     {
-      "path": "experiments/studies/structures/comparison_ABodyBuilder3_IgFold_ESMFold_AlphaFold3/cv_fold_scores.csv",
+      "path": "experiments/structures/comparison_ABodyBuilder3_IgFold_ESMFold_AlphaFold3/cv_fold_scores.csv",
       "bytes": 8212,
       "sha256": "4800a5acb201927e5ddd260d2d01f3e197e2558bb1b5f701b65ce9e7ac820f38"
     },
     {
-      "path": "experiments/studies/structures/comparison_ABodyBuilder3_IgFold_ESMFold_AlphaFold3/heldout_predictions.csv",
+      "path": "experiments/structures/comparison_ABodyBuilder3_IgFold_ESMFold_AlphaFold3/heldout_predictions.csv",
       "bytes": 251190,
       "sha256": "73139daa90a0d00367739d0f1266ff7c3a01e4a7877371aed4697a22c30351d1"
     },
     {
-      "path": "experiments/studies/structures/comparison_ABodyBuilder3_IgFold_ESMFold_AlphaFold3/manifest.json",
+      "path": "experiments/structures/comparison_ABodyBuilder3_IgFold_ESMFold_AlphaFold3/manifest.json",
       "bytes": 11009,
       "sha256": "eecdc75e19a926df13948a89a9712145d8ce3b4f4de47178a207a8fa6961b3c8"
     },
     {
-      "path": "experiments/studies/structures/comparison_ABodyBuilder3_IgFold_ESMFold_AlphaFold3/paired_differences.csv",
+      "path": "experiments/structures/comparison_ABodyBuilder3_IgFold_ESMFold_AlphaFold3/paired_differences.csv",
       "bytes": 4132,
       "sha256": "63af5a0134dcb9d74d6659937e0ccedcbf7a39759757dc0de40acf11aad10700"
     },
     {
-      "path": "experiments/studies/structures/comparison_ABodyBuilder3_IgFold_ESMFold_AlphaFold3/scores.csv",
+      "path": "experiments/structures/comparison_ABodyBuilder3_IgFold_ESMFold_AlphaFold3/scores.csv",
       "bytes": 4957,
       "sha256": "ba066339acc8242eba0e2c9809194629e93d2359eb658464f566bd844fe0ad52"
     },
     {
-      "path": "experiments/studies/primary/evidence/extension_cv_folds.csv",
+      "path": "experiments/primary/evidence/extension_cv_folds.csv",
       "bytes": 727,
       "sha256": "72d02df6c1fc14482b389f55fe3f12b5f906f58340ee06adba3af5a2393b3afb"
     },
     {
-      "path": "experiments/studies/primary/evidence/figure_input_hashes.json",
-      "bytes": 14821,
-      "sha256": "f854b368f087ee4b893058b5774883d2a8faa21780b003ead3a5f5c8e17181bf"
+      "path": "experiments/primary/evidence/figure_input_hashes.json",
+      "bytes": 14614,
+      "sha256": "269dc9a8fc5b46650bb6c0381ae239bccc873e1bfa1b9ca60824dbf5e6131e34"
     },
     {
-      "path": "experiments/studies/primary/evidence/figure_provenance.csv",
+      "path": "experiments/primary/evidence/figure_provenance.csv",
       "bytes": 5216,
       "sha256": "6dd75b5212e1bf33a0b9ccac109431d6dcb796e02f8bba86d859df2d04fd1ca6"
     },
     {
-      "path": "experiments/studies/primary/evidence/figure_typography_audit.json",
+      "path": "experiments/primary/evidence/figure_typography_audit.json",
       "bytes": 3033,
       "sha256": "fef2f7bcdd058899f9a65bf2fef05da4bd99cb68573d7bff3a8cd6f84373699c"
     },
     {
-      "path": "experiments/studies/primary/evidence/fitted_primary.pkl",
+      "path": "experiments/primary/evidence/fitted_primary.pkl",
       "bytes": 117611841,
       "sha256": "ef5c0f2d4b33f5c9302c1c77e639867a4dda0b7d45e5e7347972eb23793b5dd1"
     },
     {
-      "path": "experiments/studies/primary/evidence/model_manifest.json",
+      "path": "experiments/primary/evidence/model_manifest.json",
       "bytes": 936,
       "sha256": "70a8004afcc13bbe02d6b540153a814ac90b78147b75bd2d4d0f587d3195ae70"
     },
     {
-      "path": "experiments/studies/primary/evidence/primary_baseline_cv_folds.csv",
+      "path": "experiments/primary/evidence/primary_baseline_cv_folds.csv",
       "bytes": 1738,
       "sha256": "49c6574ada6af00f0e75957802a64e06235401088f5872e5c0d555f8a2713575"
     },
     {
-      "path": "experiments/studies/primary/evidence/primary_block_IG.csv",
+      "path": "experiments/primary/evidence/primary_block_IG.csv",
       "bytes": 236428,
       "sha256": "4106634be941fc4dfae82f9fdce949900a302e8fb5768e4b6c535f264b13f4d8"
     },
     {
-      "path": "experiments/studies/primary/evidence/primary_component_reproduction.csv",
+      "path": "experiments/primary/evidence/primary_component_reproduction.csv",
       "bytes": 2889,
       "sha256": "77374e33c5fb6b5f05c183722462ed21e813ecea035c81b18adc460b04bfdfdc"
     },
     {
-      "path": "experiments/studies/primary/evidence/primary_cv_folds.csv",
+      "path": "experiments/primary/evidence/primary_cv_folds.csv",
       "bytes": 2861,
       "sha256": "305e0e71271cf85d76127caa1adda066077990b52fdda922abbf9183543d4698"
     },
     {
-      "path": "experiments/studies/primary/evidence/primary_cv_predictions.csv",
+      "path": "experiments/primary/evidence/primary_cv_predictions.csv",
       "bytes": 55832,
       "sha256": "3eb805c6b40ca437f55cc00c472593cf36d3bca7bfe159e602f107b4b7f3493d"
     },
     {
-      "path": "experiments/studies/primary/evidence/primary_feature_IG.csv",
+      "path": "experiments/primary/evidence/primary_feature_IG.csv",
       "bytes": 2817277,
       "sha256": "5f7142a80512e1aa5a81149c78adffc28926dcfc913117b5adbdf18e583ebeef"
     },
     {
-      "path": "experiments/studies/primary/evidence/primary_learning_folds.csv",
+      "path": "experiments/primary/evidence/primary_learning_folds.csv",
       "bytes": 4416,
       "sha256": "f1354040353594ab2d7bf9197c94b61f68dc288287ed0d884e7bbf616ab9dd56"
     },
     {
-      "path": "experiments/studies/primary/evidence/primary_paired_significance.csv",
+      "path": "experiments/primary/evidence/primary_paired_significance.csv",
       "bytes": 767,
       "sha256": "618ba97e3e329abe9c93379f58efd327eb1b822d3cbdac7470023ad9a4b73645"
     },
     {
-      "path": "experiments/studies/primary/evidence/primary_precision_at_k.csv",
+      "path": "experiments/primary/evidence/primary_precision_at_k.csv",
       "bytes": 499,
       "sha256": "4823dc21fb75fff075d5d3eb8c064f763860cf6946013136edce186d54b802ad"
     },
     {
-      "path": "experiments/studies/primary/evidence/primary_predictions.csv",
+      "path": "experiments/primary/evidence/primary_predictions.csv",
       "bytes": 113650,
       "sha256": "639d3bfd1f2f7856bbf073598ad40c7bdfb5c9b1d34c2c13bc4d175510305f17"
     },
     {
-      "path": "experiments/studies/primary/evidence/primary_reproduction.csv",
+      "path": "experiments/primary/evidence/primary_reproduction.csv",
       "bytes": 1318,
       "sha256": "8ea7c1430c62180f90a1b74561a11a435d19e3d7ce0edf8780c05e5f8e5bab2f"
     },
     {
-      "path": "experiments/studies/primary/evidence/primary_residue_shap.csv",
+      "path": "experiments/primary/evidence/primary_residue_shap.csv",
       "bytes": 194792,
       "sha256": "54a886c5f77737fe933263092f61b58a9e11afada2f467c5d908973c9370211c"
     },
     {
-      "path": "experiments/studies/primary/evidence/primary_source_ablation.csv",
+      "path": "experiments/primary/evidence/primary_source_ablation.csv",
       "bytes": 1761,
       "sha256": "c5cbe76f46d39ac8c2da02a9ab6301c2d61a91a420ff2f3de0c29729cf4a7ff3"
     },
     {
-      "path": "experiments/studies/primary/evidence/residue_shap_manifest.json",
+      "path": "experiments/primary/evidence/residue_shap_manifest.json",
       "bytes": 1143,
       "sha256": "e05ba1d4e17f65022f2f5132350841444f427eeb4b0cdfe5755f1bcf51e2bf56"
     },
     {
-      "path": "experiments/studies/primary/evidence/surface_render_manifest.json",
+      "path": "experiments/primary/evidence/surface_render_manifest.json",
       "bytes": 431,
       "sha256": "560e47d1009b2547130657c7aa2149efe6abb01b9d3ea58be348d74c3c1bece6"
     },
     {
-      "path": "experiments/studies/primary/evidence/validation_report.json",
+      "path": "experiments/primary/evidence/validation_report.json",
       "bytes": 2282,
       "sha256": "287ec966241c18356401453f071843b53b848a2c7ffa1a0bba740982c4a735ac"
     }

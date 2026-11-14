@@ -7,7 +7,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.colors import TwoSlopeNorm
 import fitz
-H=Path(__file__).parent;ROOT=H.parents[2];R=ROOT/'results';F=H/'figures'
+H=Path(__file__).parent;ROOT=H.parents[1];R=ROOT/'results';F=H/'figures'
 os.chdir(ROOT)
 E=H.parent/'recorded_results/evidence';V=H.parent/'primary'
 sys.path[:0]=[str(V),str(ROOT/'scripts'),str(ROOT/'src')]

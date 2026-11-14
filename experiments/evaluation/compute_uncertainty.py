@@ -8,7 +8,7 @@ import sys,pickle,json
 import numpy as np,pandas as pd
 from scipy.stats import spearmanr,rankdata,bootstrap,norm
 from threadpoolctl import threadpool_limits
-H=Path(__file__).parent;ROOT=H.parents[2];E=H/'evidence';R=ROOT/'results';V=H.parent/'primary'
+H=Path(__file__).parent;ROOT=H.parents[1];E=H/'evidence';R=ROOT/'results';V=H.parent/'primary'
 os.chdir(ROOT);sys.path[:0]=[str(ROOT/'scripts'),str(ROOT/'src'),str(V)]
 import verify_primary as VP
 from abdev.data.dataset import load_gdpa1

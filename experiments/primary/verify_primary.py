@@ -11,7 +11,7 @@ from pathlib import Path
 import numpy as np,pandas as pd
 from scipy.stats import spearmanr
 from threadpoolctl import threadpool_limits
-HERE=Path(__file__).parent; ROOT=HERE.parents[2]; OUT=HERE/'evidence'
+HERE=Path(__file__).parent; ROOT=HERE.parents[1]; OUT=HERE/'evidence'
 sys.path[:0]=[str(ROOT/'src'),str(ROOT/'scripts')]
 import aw_moe as AW
 from abdev.data.dataset import load_gdpa1

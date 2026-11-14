@@ -9,7 +9,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch
 from matplotlib.colors import TwoSlopeNorm
-H=Path(__file__).parent;ROOT=H.parents[2];R=ROOT/'results';E=H/'evidence';F=H/'figures'
+H=Path(__file__).parent;ROOT=H.parents[1];R=ROOT/'results';E=H/'evidence';F=H/'figures'
 sys.path[:0]=[str(ROOT/'scripts'),str(ROOT/'src')]
 W=183/25.4;BLUE='#0072B2';ORANGE='#D55E00';GREY='#9ca8ae';COLORS=['#0072B2','#E69F00','#009E73','#CC79A7','#56B4E9','#D55E00']
 plt.rcParams.update({'font.family':'Arial','font.size':7,'axes.titlesize':7,'axes.labelsize':7,'xtick.labelsize':7,'ytick.labelsize':7,'legend.fontsize':6.5,'pdf.fonttype':42,'ps.fonttype':42,'svg.fonttype':'none','axes.spines.top':False,'axes.spines.right':False,'axes.linewidth':.5,'lines.linewidth':.85,'lines.markersize':3,'xtick.major.size':2,'ytick.major.size':2,'savefig.dpi':300})
